@@ -1,0 +1,84 @@
+A quick comparison of XML and YAML is being shown in Table below.
+
+
+
+\begin{figure}
+\begin{center}
+\scalebox{0.80}
+{\includegraphics{design3a.png}}
+\caption{System Architecture - Stage I} \label{Fig:2}
+\end{center}
+\end{figure}
+
+
+
+
+\begin{figure}
+\begin{center}
+\scalebox{0.80}
+{\includegraphics{design4a.png}}
+\caption{System Architecture - Stage II \& III} \label{Fig:3}
+\end{center}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\scalebox{0.80}
+{\includegraphics{design5a.png}}
+\caption{System Architecture - Stage IV} \label{Fig:4}
+\end{center}
+\end{figure}
+
+
+
+\begin{tabular}{|r|r|r|} 
+\hline 
+This & Here & And the \\ 
+\cline{1-2} 
+\multicolumn{3}{|c|}{$x+y=3$} \\ 
+\cline{1-1} \cline{3-3} 
+first & column & here \\ 
+\hline \hline 
+\end{tabular} 
+
+\begin{tabular}{|l||l|l||l|l|}
+\hline
+ &\multicolumn{2}{l|}{Singular}&\multicolumn{2}{l|}{Plural}\\
+\cline{2-5}
+ &English&\textbf{Gaeilge}&English&\textbf{Gaeilge}\\
+\hline\hline
+1st Person&at me&\textbf{agam}&at us&\textbf{againn}\\
+2nd Person&at you&\textbf{agat}&at you&\textbf{agaibh}\\
+3rd Person&at him&\textbf{aige}&at them&\textbf{acu}\\
+ &at her&\textbf{aici}& & \\
+\hline
+\end{tabular}
+\begin{tabular}{|r|r|r|} 
+\hline 
+This & Here & And the \\ 
+\cline{1-2} 
+is & is second & third is \\ 
+\cline{1-1} \cline{3-3} 
+first & column & here \\ 
+\hline \hline 
+\end{tabular} 
+
+
+
+\section{\label{res}Conclusion and Future Work}
+This paper described the standardization of unstructured text into Semantic Web Format, which is achieved in four stages.
+
+Considerable human hours are wasted in the repetitive task of interpretation and semantic annotation to reclaim the knowledge implicitly conveyed in the vast amount of ever growing available text content. This is due to the fact that the major part of the implicit semantic knowledge is not taken into account by state-of-the-art information access technologies like search engines, which restrict their indexing activities to superficial levels, mostly the keyword level. The work reported in this thesis becomes significant under these circumstances.  
+
+The process of unearthing information from text is extremely complex, considering the unpredictability of information packed in unstructured text. Hence a semi automatic method based on self learning mechanism is presented. 
+
+An important feature of such a system, is to have a facility that gives user the control over the process while automatically taking care of the extraction process based on the vocabulary base. This system is equipped with this feature in the sense that at the extraction
+phase it always performs the full extraction, based on the settings defined by the user. 
+
+Judging the correctness of the pre-selection recommended by the user, is a hard task in the process of semantic information extraction. To minimise the difficulty of this task, text highlighting of the annotated information was done in the original document. 
+
+To make things more deterministic for the user, for the next generation system, it is suggested to have a text highlighting of the extracted  information in the original document. The user could, by clicking on each of the suggestions, see the extracted highlighted entity within a context and more easily determine its correctness. Also, extraction techniques have to be more effective to minimise user intervention, thus effectively supplementing the system automation. 
+
+Although present work is just confined to the text, no one can ignore the luring and challenging task of effective acquisition, organization, processing, sharing, and use of the knowledge embedded in multimedia content as well as in information and knowledge based work processes. 
+
+

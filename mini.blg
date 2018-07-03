@@ -1,0 +1,16 @@
+This is BibTeX, Version 0.99cThe top-level auxiliary file: mini.aux
+The style file: unsrt.bst
+Database file #1: bibname.bib
+Repeated entry---line 12 of file bibname.bib
+ : @article{ NRMF97
+ :                 ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 42 of file bibname.bib
+ : @conference{ BCDK94
+ :                    ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 54 of file bibname.bib
+ : @article{ NRMF97
+ :                 ,
+I'm skipping whatever remains of this entry
+(There were 3 error messages)

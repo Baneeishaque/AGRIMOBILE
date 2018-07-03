@@ -1,0 +1,8 @@
+\beamer@endinputifotherversion {3.36pt}
+\select@language {english}
+\beamer@subsectionintoc {0}{1}{INTRODUCTION}{2}{0}{0}
+\beamer@subsectionintoc {0}{2}{MODULE DESCRIPTION}{4}{0}{0}
+\beamer@subsectionintoc {0}{3}{DATA FLOW DIAGRAM}{8}{0}{0}
+\beamer@subsectionintoc {0}{4}{DESIGN}{12}{0}{0}
+\beamer@subsectionintoc {0}{5}{CONCLUSION AND FUTURE WORK}{24}{0}{0}
+\beamer@subsectionintoc {0}{6}{REFERENCES}{26}{0}{0}

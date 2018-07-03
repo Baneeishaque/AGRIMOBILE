@@ -1,0 +1,264 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2013.4.15)  16 DEC 2013 13:23
+entering extended mode
+**second.tex
+("C:\Users\mujeeb\Desktop\first review\Minitex\second.tex"
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman, ngerman, german-x-2009-06-19, ngerman-x-2009-06-19, french, loaded.
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\base\article.cls"
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\base\size10.clo"
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\graphics\epsfig.sty"
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2010/02/14 v0.04n Graphics/color for pdfTeX
+\Gread@gobject=\count87
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+\epsfxsize=\dimen105
+\epsfysize=\dimen106
+)
+("C:\Users\mujeeb\Desktop\first review\Minitex\second.aux"
+
+LaTeX Warning: Label `key1' multiply defined.
+
+
+LaTeX Warning: Label `key1' multiply defined.
+
+
+LaTeX Warning: Label `key1' multiply defined.
+
+
+LaTeX Warning: Label `key1' multiply defined.
+
+
+LaTeX Warning: Label `key1' multiply defined.
+
+
+LaTeX Warning: Label `key1' multiply defined.
+
+
+LaTeX Warning: Label `key1' multiply defined.
+
+
+LaTeX Warning: Label `key1' multiply defined.
+
+)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+ ("C:\Program Files (x86)\MiKTeX 2.8\tex\context\base\supp-pdf.tex"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count88
+\scratchdimen=\dimen107
+\scratchbox=\box26
+\nofMPsegments=\count89
+\nofMParguments=\count90
+\everyMPshowfont=\toks15
+\MPscratchCnt=\count91
+\MPscratchDim=\dimen108
+\MPnumerator=\count92
+\everyMPtoPDFconversion=\toks16
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 11.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 11.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 11.
+Missing character: There is no ’ in font cmbx10!
+Missing character: There is no “ in font cmbx10!
+Missing character: There is no ” in font cmbx10!
+
+Underfull \hbox (badness 1173) in paragraph at lines 13--14
+\OT1/cmr/bx/n/10 by quickly drain-ing nodes bat-tery power.
+ []
+
+
+Underfull \hbox (badness 1194) in paragraph at lines 15--17
+\OT1/cmr/m/n/10 Service,multi-path rout-ing, op-por-tunis-tic rout-ing,
+ []
+
+
+Underfull \hbox (badness 1102) in paragraph at lines 29--31
+\OT1/cmr/m/n/10 age-ment plane, mo-bil-ity man-age-ment plane and
+ []
+
+
+Underfull \hbox (badness 1859) in paragraph at lines 29--31
+\OT1/cmr/m/n/10 lay-ered ar-chi-tec-ture.Researches are al-ways be-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--31
+
+ []
+
+[1{C:/ProgramData/MiKTeX/2.8/pdftex/config/pdftex.map}
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 32--34
+
+ []
+
+
+Underfull \hbox (badness 1062) in paragraph at lines 35--37
+\OT1/cmr/m/n/10 rout-ing and min-i-mize the com-mu-ni-ca-tion,storage
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--37
+
+ []
+
+
+Underfull \hbox (badness 2126) in paragraph at lines 38--40
+[]\OT1/cmr/m/n/10 Fatma Bouab-dul-lah, Nizar Bouab-dul-lah,Raouf
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--40
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--43
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--46
+
+ []
+
+! Misplaced alignment tab character &.
+l.47 E.Y Vasserman &
+                     N. Hopper[6] proposed a new method for resource depleti...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Underfull \hbox (badness 1178) in paragraph at lines 47--49
+\OT1/cmr/m/n/10 at-tacks. They are stretch at-tack and carousel
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--49
+
+ []
+
+[2]
+Underfull \hbox (badness 1237) in paragraph at lines 69--72
+\OT1/cmr/m/n/10 less Sen-sor Net-works",  \OT1/cmr/m/it/10 Uni-ver-sity of Col-
+
+ []
+
+
+Underfull \hbox (badness 2351) in paragraph at lines 73--76
+\OT1/cmr/m/n/10 Bouab-dul-lah  "Cross-layer De-sign for En-
+ []
+
+
+Underfull \hbox (badness 2435) in paragraph at lines 73--76
+\OT1/cmr/m/n/10 ergy Con-ser-va-tion in Wire-less Sen-sor Net-
+ []
+
+
+Underfull \hbox (badness 1540) in paragraph at lines 81--84
+[]\OT1/cmr/m/n/10 Tapaliana Bhat-tasali,Rituparna Chaki,Sugata
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--92
+[]\OT1/cmr/m/n/10 Yazeed Al-Obaisat,Robin Braun,  "On
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--92
+\OT1/cmr/m/n/10 Wire-less Sen-sor Net-works: Ar-chi-tec-
+ []
+
+
+Underfull \hbox (badness 2285) in paragraph at lines 93--97
+\OT1/cmr/m/n/10 Ap-proach",  \OT1/cmr/m/it/10 CoNEXT:Proc.ACM CoNEXT
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--97
+
+ []
+
+[3] ("C:\Users\mujeeb\Desktop\first review\Minitex\second.aux")
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 941 strings out of 495285
+ 12112 string characters out of 3179824
+ 67010 words of memory out of 3000000
+ 4186 multiletter control sequences out of 15000+200000
+ 8241 words of font info for 29 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 32i,7n,21p,927b,219s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
+<C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
+:/Program Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/P
+rogram Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Prog
+ram Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program
+ Files (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on second.pdf (3 pages, 113970 bytes).
+PDF statistics:
+ 36 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

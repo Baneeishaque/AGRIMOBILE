@@ -1,0 +1,147 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%  see documentation for information about  %%%%%%%%%%
+%%%%%%%%%%%  the options (11pt, defaultstyle, etc.)   %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%  http://www.Colorado.EDU/ITS/docs/latex/ThesisClass/  %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%	\documentclass[defaultstyle]{thesis}
+%	\documentclass[typewriterstyle]{thesis}
+% 	\documentclass[modernstyle]{thesis}
+%	\documentclass[modernstyle,12pt]{thesis}
+	\documentclass[modernstyle,12pt]{seminar}
+
+% 	\documentclass[modernstyle,11pt]{thesis}
+% 	\documentclass[defaultstyle,12pt]{thesis}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%    load any packages which are needed    %%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{graphics}
+\usepackage{graphicx}
+
+\usepackage{latexsym}		% to get LASY symbols
+\usepackage{epsfig}		% to insert PostScript figures
+\usepackage{rotating}		% for sideways tables/figures
+\usepackage{eufrak}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%       all the preamble material:       %%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%% Parameters To be populated by the author START %%%%%%%%%%%%%
+\title{Standardization of Unstructured Textual Data into Semantic Web Format}
+\author{Abdul Haleem}{P.P.}
+\advisor{}{Mr K.A. Abdul Nazeer}			%  #1 {title}
+\rollnum{MCS09303310}                                  % roll number
+\degreeyear{2011-12}                                     % academic year
+%%%%%%%%%%%% Parameters To be populated by the author END %%%%%%%%%%%%%
+
+
+
+%\otherdegrees{B.A., North Dakota State University, 1994 \\
+%	      M.S., University of Reno, 1997}
+
+\degree{\Large {$\mathfrak {Master\; of\; Technology}$}}		%  #1 {long descr.}
+	{M.Tech., Computer Science and Engineering}		%  #2 {short descr.}
+
+\dept{Department of}			%  #1 {designation}
+	{Computer Science and Engineering}		%  #2 {name}
+
+
+
+
+\reader{Dr. P.P. Abdul Haleem}		%  2nd person to sign thesis
+%\readerThree{Ms.~Thora Nea}		%  3rd person to sign thesis
+% \readerFour{Mr.~Alfred Remington}	%  4rd person to sign thesis
+
+
+\inst{MES College of Engineering}                   % institution
+
+%\deg{Master of Technology}		             %  degree name (in certificate)
+\course{Computer Science and Engineering}    %  course name
+
+
+%%%%%%%%%%%% Add your abstract here! START %%%%%%%%%%%%%
+
+\abstract{  \OnePageChapter	% one page only ??
+	 Analysis done on the nature of the data posted on the Net reveal that more than 80\% of the data over the Net is in unstructured text format. Hence extracting information from text is of paramount importance both for academic and business purposes. Simultaneously, evolution of web technology led to the novel concept of Semantic Web,  which is an extension of the current web in which information is given well-defined meaning, enabling computers and people to work in cooperation in a better way. Integration of voluminous, legacy text data that are unstructured and semistructured, into Semantic Web format is a challenging and daunting task for the research community. This thesis work is an attempt to marry the concept of Semantic Web format with unstructured text, thus to enable the computers, the discovery of new, previously unknown information, by automatically extracting information from different written resources. A key element is the linking together of the extracted information semantically together so that it can be directly used by the Semantic Web projects. The design of the proposed system is found to be complex, due to the primary fact that the work encompasses several research areas and these results are still in evolving stage.}
+}
+%%%%%%%%%%%% Add your abstract here! END %%%%%%%%%%%%%
+
+%%%%%%%%%%%% Add your acknowledgements here! START %%%%%%%%%%%%%
+\acknowledgements{	\OnePageChapter	% *MUST* BE ONLY ONE PAGE!
+Your acknowledgements
+
+\begin{raggedright}
+\vspace*{10mm}
+\hspace*{117mm}
+\textbf{Your name}
+\end{raggedright}
+}
+%%%%%%%%%%%% Add your acknowledgements here! END %%%%%%%%%%%%%
+
+
+\ToCisShort	% a 1-page Table of Contents ??
+
+\LoFisShort	% a 1-page List of Figures ??
+% \emptyLoF	% no List of Figures at all ??
+
+\LoTisShort	% a 1-page List of Tables ??
+% \emptyLoT	% no List of Tables at all ??
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%       BEGIN DOCUMENT...         %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%  Weird footnotes??
+%%%%  default=\arabic; \roman, \Roman, \alph, \Alph, \fnsymbol
+%	\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+%	\setcounter{footnote}{0}
+
+\begin{document}
+
+
+
+\input macros.tex
+
+%% all chapters can be input like this....%%
+\input ch1.tex
+% \input ch2.tex
+% \input ch3.tex
+% \input ch4.tex
+% \input ch5.tex
+% \input ch6.tex
+% \input ch7.tex
+\input ch8.tex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%  Bibliography %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bibliographystyle{IEEEtran}
+% \bibliographystyle{plain}	% or "siam", or "alpha", or "abbrv"
+				% see other styles in
+				% /usr/local/TeX/texmf/bibtex/bst
+
+\nocite{*}		        % list all refs in database, cited or not.
+
+\bibliography{seminar}		% bib database in "Project4.bib"
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%  Appendices %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\appendix	% don't forget this line if you have appendices!
+%\input appA.tex
+%% all appendices included in this manner%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%   THE END   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}

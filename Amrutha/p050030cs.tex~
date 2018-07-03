@@ -1,0 +1,1066 @@
+\documentclass[twocolumn,10pt]{article}
+
+\title{An Efficient Approach for Thinning of Wireless Mobile Messaging}
+
+\author{P P Abdul Haleem and Dr M P Sebastian \thanks{Professor and Head} \\Department of Computer Engineering\\National Institute of Technology Calicut, Kerala, India}
+\usepackage{graphics}
+\usepackage{epsfig}
+\begin{document}
+%\input{psfig}	
+\maketitle
+
+{\bf Keywords:}
+Wireless Environment, Wireless/Mobile Messaging, Thinning Wireless Mobile Messages, XML, Knowledge Representation, Streaming messages, Mobile Computing.
+	
+\abstract{}
+{ \em Increasing popularity and wide usage of wireless mobile devices are really making wireless mobile devices as quintessential entities of today's network. Also, the issue of formulating a uniform platform for messaging across a wide range of wireless mobile devices with varying standards, is a potential challenge. eXtensible Markup Language (XML), a legacy technology, but still in use as a universal solution for representation of heterogeneous data formats, seems to be a suitable platform for this purpose. But the storage requirements and processing workforce needed for XML, make it a nightmare for the designers. This paper is about an alternative mechanism to achieve the goal of an acceptable messaging platform for heterogeneous devices, safely eliminating all the side effects of XML. Evaluation results clearly indicate an impressive improvement over the limitations of XML when applied to the wireless mobile environment.}
+
+\section{\label{intro}Introduction}
+
+Armed with the power of availability being nomadic, usage of wireless mobile devices have just recorded an amazing growth  all over the world. Being active members of every network, their presence causes several issues for existing network protocols and applications. This is due to the inherent deficiencies of wireless mobile devices such as low processing power, battery requirements and poor quality of wireless networks, especially bandwidth and latency. In tune with the tremendous growth of mobile devices, mobile messaging market is also amassing huge revenue - this industry segment will account for 10\% of total mobile services revenue by 2008, in USA alone \cite{M05}.
+
+The uncontrollable usage of heterogeneous wireless mobile devices poses a potential challenge to the research community. By integrating these diverse range of devices, one end system can access the services from another one directly. A cross platform technology that can be used to achieve seamless access to various range of devices and systems is the right candidate for such a scenario. The search for an acceptable cross platform standard unanimously converges to XML. In Simple Object Access Protocol (SOAP), XML is already in use as a message syntax format\cite{C04}. But XML, in its present format, has got a lot of serious limitations, especially when used with wireless mobile devices. SOAP is not suitable for wireless mobile device with the primary reason of its verbosity. Also Hyper Text Transfer Protocol (HTTP), the most widely used protocol in SOAP is not appropriate for wireless mobile devices\cite{J05}\cite{LH03}.
+
+Hence there is an urgent need for a novel messaging standard, where all the inherent limitations of the wireless mobile environment is addressed. Our proposed work encompasses the following goal - How a messaging protocol can be devised that having the strong points of XML, but free from its weak aspects. Thus our aim is to suggest a messaging format that has the following features:
+
+\begin{itemize}
+\item simple, flexible - both for user and application programmer.
+\item legible and easily editable. 
+\item schema aware.
+\item consumes less bandwidth by reducing the verbosity of content.
+\item secure and fast.
+\end{itemize}
+
+This paper is organized as follows: In Section \ref{oview}, a brief introduction to the existing technologies is discussed. Section \ref{relwor} outlines the related work. Section \ref{pbr} shows the problem definition. In Section \ref{desig}, the details regarding technical realization is explained. Performance evaluation of the results obtained are discussed in Section \ref{res1}. Section \ref{res} contains conclusion and a brief discussion about the future work.
+
+\section{\label{oview}Overview}
+
+\subsection{\label{ovmob}Mobile Messaging}
+Vast availability and popularity of wireless mobile devices revolutionized the way people communicate over each other. 
+Presently, wireless mobile devices are increasingly popular as active members of any network. Short Message Service (SMS) messaging recorded a tremendous growth all over the world, ever since the facility of sending messages over wireless mobile devices has been introduced. Despite its limitations, SMS is widely used today and accounts for a significant part of mobile operator revenues. Apart from the normal use of communication, this facility can also be better utilized to exchange information. For eg, Web services heavily make use of messages for exchanging data over different entities. Applying a user friendly messaging protocol, that consume less bandwidth and that provides a fast and secure processing overhead is a major challenge to the research community. 
+
+XML \cite{X07} and SOAP \cite{SP07} are two important technologies worth mentioning in this regard. A brief discussion about these technologies are done in the following sections.
+
+\subsection{\label{ovmobxml}eXtensible Markup Language}
+XML is a specification for computer-readable documents. Markup means that certain sequences of characters in the document containing the information indicating the role of the document's content. The markup describes the documents data layout and logical structure and makes the information self-describing. It takes the form of words between tags, for example, $<name>$ or $<h1>$. In this aspect, XML looks very much like the well-known language Hyper Text Markup Language (HTML).
+
+The traditional use of XML was for the representation of data-oriented facts. Users are free to develop there own structures and create huge databases over web. Currently XML is widely perceived as a message syntax format : a significant usage that its innovators could not even think about! SOAP is a nice example where XML is actively present in its new incarnation - a message syntax format. 
+
+XML, a legacy technology, still widely in use, has a lot of advantages. The most attracting feature of XML is that it can be used with latest Internet technology, in its present format. It has become the defacto standard to represent data over heterogeneous systems. Studies done on XML based packet routing and filtering revealed that it is viable and applicable. 
+
+At the same time, XML faces a lot of problems when used in wireless mobile environments \cite{J05}. A few of these issues is listed as follows: 
+\begin{itemize}
+\item It is highly textual, requires string parsing for further processing.
+\item It is strictly structured. Adherence of the document to the accompanying structure will be verified by parsers also. Hence XML parsing is a heavyweight activity.
+\item Due to the verbosity nature, when inputting and outputting, XML buffers need to be flushed more often, leading to lesser throughput. 
+\item Larger messages are more vulnerable to retransmissions, especially in wireless environments.
+\item As XML is widely in use, it becomes an easy target for hackers.
+\end{itemize}
+
+\subsection{\label{ovmobsoap}Simple Object Access Protocol}
+
+Web services heavily make use of messages for exchanging data over different entities. SOAP is used as the protocol in web services, where XML is being used a message syntax format in SOAP.  Main underlying protocol in SOAP is HTTP due to the following reasons \cite{TLC05}:
+
+\begin{itemize}
+\item To support regular Web traffic, HTTP is allowed through firewalls. This firewall permissibility is hijacked by Web services also.
+\item SOAP is used to be as a protocol only for remote procedure calls (RPC). In this case HTTP\’s request-response model fits into the application, making it a viable choice.
+\item Presently, even after making SOAP as a generic messaging format, the wireless mobile environment demands for more flexibility in communication patterns.
+\end{itemize}
+
+But HTTP is not an apt choice for wireless mobile environments due the following facts \cite{LH03}:
+
+\begin{itemize}
+\item It make use of the protocols in the underlying layers. Misuse of the protocols in the underlying layers will hinder the performance, even if those layers are working properly. 
+\item Its verbosity as a protocol. The header size of HTTP can range to reach several kilobytes, and it may even kill the fruits of a generic compression.
+\end{itemize}
+
+However the header-body split available in the HTTP\’s message model is a very useful concept. By defining header semantics
+suitably, an application can implement useful features quite easily on top of the underlying protocol. It is worth mentioning here that we have incorporated this technique in our proposed work.
+
+\section{\label{relwor}Related Work}
+
+In \textbf{subsections \ref{ovmobxml}} and \textbf{\ref{ovmobsoap}}, we briefly discussed the inherent limitations of XML and hence SOAP, pertaining to the wireless mobile environment. Several solutions are proposed in the literature to surmount these issues. They can be broadly classified into the following categories:
+
+\begin{itemize} 
+\item Standard compression techniques.
+\item Alternate formats for XML.
+\item Caching \cite{DA03}.
+\item Binary Encoding.
+\item Hardware Accelerator \cite{F06}.
+\end{itemize}
+
+A close watch on all of these methods reveal several shortcomings when applied to wireless mobile environment. For instance, standard compression techniques such as Millau \cite{GS00}, Gzip\cite{CGGSS02}, XMill\cite{CGGSS02} yield better performance with larger messages with a high redundancy rate. With SOAP, this is a working solution, as HTTP supports generic compression tools. But it will not yield much results with large sets of short messages typical in wireless mobile scenarios. Compression routines will have to employ different compression techniques on different parts of XML document - elements and attributes. This will clearly add woe to the injury, due to the long range of dependencies between elements and attributes. Also a compression/decompression layer will be an additional burden for the resource intensive wireless mobile devices \cite{R04}. 
+
+In order to achieve a messaging format that demands less bandwidth requirements, several alternative serialization formats were proposed. Wireless Application Protocol (WAP) Binary XML (WBXML),  also called Binary XML, is oldest known format in this direction. Prominent examples applying WBXML are Sun’s Fast Web Services \cite{PSKMER03} and Fast InfoSet \cite{PSAS04} proposals. Since WBXML does not support the XML name-spaces\cite{PS05}, it is considered as an obsolete service. The Xebu \cite{X06} format builds up its tokenization during a stream of messages, instead of considering each XML document in isolation as most other formats. But this is acknowledged by the authors as preliminary. The major crux of these methods are an attempt to reduce the size of the message, by employing shorter tags. Self descriptive nature and easy readability that exists in XML are hampered due to the introduction of these enhancements. Also there are concerns about the security aspects of XML Encryption \cite{E07}, when encoding is applied.   Of course certain remedies are proposed by Indiana University \cite{A03}  and The Georgea Institute of Technology \cite{PGK01}, but they are costly when implementation and evolution of applications are taken into consideration.
+
+Our work clearly distinguishes from these directions in the sense that it retains the agility of the legacy XML technology - at the same time, its inherent deficiencies are carefully addressed.
+
+\section{\label{pbr}An Efficient Approach for Thinning of Wireless Mobile Messaging}
+
+The need to address the formulation of an alternative messaging format for wireless mobile environment                                                                                                                            is mentioned in the previous sections. 
+
+Our humble attempt is to propose a messaging protocol that retains the features of XML such as self descriptive nature, readability, ease of preparation, schema awareness and security, and at the same time kills all the inherent deficiencies of XML, mainly its verbosity. YAML Ain\'t Markup Language (YAML) \cite{Y06}, an international collaboration to make a data serialization language which is both human readable and computationally powerful, is utilized to achieve this goal. Apart from introducing YAML as a viable alternative, we have made significant value additions to the standard in order to achieve maximum throughput.
+
+The task is visualized in five stages. In the first stage, the message is coded in YAML format. In the second stage, bifurcation of structure and content is performed. In the third stage, verification and confirmation of the definitions made in second stage are performed. In the fourth and fifth stages, the message is thinned by making use of the inherent properties of YAML and the results of the efforts made in stage II (\textbf{section \ref{desigsy2}}). 
+
+\section{\label{desig}Technical Realization}
+
+\subsection{\label{desigya}Why YAML?}
+
+For our work, we utilized YAML (rhymes with ``camel''), a data serialization language founded by Brian Ingerson, Clark Evans, and Oren Ben-Kiki \cite{Y06}. YAML is a human-readable data serialization format that takes concepts from languages such as XML, C, Python, Perl, as well as the format for electronic mail as specified by RFC 2822. Since XML (a true document markup language) is frequently used for data serialization, it is reasonable to consider YAML a lightweight markup language. YAML is a straightforward machine parsable data serialization format designed for human readability and interaction. YAML is optimized for data serialization, configuration settings, log files, Internet messaging and filtering \cite{Y06}. YAML's representation of native data is a rooted, connected, directed graph of tagged nodes. All the nodes must be reachable from the root node via such edges \cite{YA07}. 
+
+The decisions to make use of YAML for our work can be summarized as follows:
+\begin{itemize}
+\item It is easily readable and editable by any standard word processors.
+\item It interacts well with scripting languages.
+\item It uses host languages' native data structures.
+\item It has a consistent information model.
+\item It enables stream-based processing.
+\item It is as expressive and extensible as XML.
+\item Its serialization reduces the verbosity of the message considerably, that too without affecting its readability.
+\end{itemize} 
+
+Our experiments clearly reveal that YAML outperforms XML in all key aspects that we have taken into consideration.
+
+\subsection{\label{desigsy}System Design}
+
+The entire system is formulated in five stages.
+\begin{itemize}
+\item \emph{Stage I} Codification of test messages in YAML format.
+\item \emph{Stage II} Bifurcation of structure and content.
+\item \emph{Stage III} Substantiation and Confirmation.
+\item \emph{Stage IV} Thinning - Phase I.
+\item \emph{Stage V} Thinning - Phase II.
+\end{itemize}
+
+\subsubsection{\label{desigsy1}Stage I - Codification of test messages in YAML format}
+
+Messages are created as per YAML format. Document creation is extremely easy in YAML compared to XML. It can be created with the use of any simple text processor. The syntax is relatively straightforward and is designed with human readability in mind, but also to be easily mapped to data types common to most high-level languages.
+
+YAML streams are encoded using the set of printable Unicode characters, either in UTF-8 or UTF-16. Structure is denoted by white space indentation; tab characters are never allowed for this purpose. List members are denoted by a leading hyphen ( - ) with one member per line, or enclosed in square brackets ( [] ) and separated by comma space (,). Repeated nodes are initially denoted by an ampersand (\& ) and thereafter referenced with an asterisk ( * ). Comments are denoted by the number sign ( \# ) and continue until the end of the line. A more detailed account of YAML specifications can be seen in \cite{YA07}.
+
+A simple message like ``Meeting @ 8 AM'' from user A to User B can be codified in YAML as shown below.
+
+\begin{quote}
+
+\emph{\%YAML 1.1}
+\emph{\-\-\-}
+
+\emph{note:}
+
+\emph{ \- to      : A}
+
+\emph{   from    : B}
+
+\emph{   from    : B}
+
+\emph{   heading : Remainder}
+
+\emph{   body    : Meeting @ 8 AM}
+
+\emph{...}
+\end{quote}
+
+The XML version to achieve the same goal is shown below:
+\begin{quote}
+\emph{$<?xml version="1.0" encoding="ISO-8859-1" ?>$}
+
+\emph{$<note>$} 
+
+\emph{ $<to>$A$</to>$}
+
+\emph{ $<from>$B$</from>$}
+
+\emph{ $<heading>$Reminder$</heading>$}
+
+\emph{ $<body>$Meeting @ 8 AM$</body>$}
+
+\emph{$</note>$} 
+
+\end{quote} 
+
+In this simple message, there is an immediate gain of 42 bytes (104 bytes for YAML against 146 in XML). This can be further improved by applying thinning measures that are being discussed in the following sections. 
+
+\subsubsection{\label{desigsy2}Stage II - Bifurcation of structure and content}
+
+YAML data serialization include both data description and content, as an inter-woven combination. Aim of this stage is to achieve separation of structure and content. Undoubtedly this will reduce the message size, particularly, when there are a set of messages as per a common structure. Interestingly, this is a technical improvement over YAML in its ``natural'' format.
+
+To achieve this task, the document is to be scanned one node at a time. There are three kinds of nodes in YAML - scalar, sequence, and mapping. Apart from this, there can be a mapping of sequence and sequence of mappings also. By sequence we mean an ordered series of entries; by mapping we mean an unordered association of unique keys to values; and by scalar we mean any datum with opaque structure presentable as a series of Unicode characters. Combining these primitives generate a directed graph structure. 
+
+Message structure is to be evaluated to decide about the type of schema to be constructed. Type can be of any of the three kinds just explained - scalar, sequence and mapping. Mapping of sequence and sequence of mappings are considered as special cases. Primitive details like name of the ``field'', its data type and an ID value are added to the schema for every member in a node. Further details to the schema could be added in the validation and verification stage. Once this process is completed, we get a schema description of the message to be transferred. 
+
+\subsubsection*{\label{desigsy2yaml}YASchema - An Attempt to add schema-awareness to YAML}
+
+It is worth mentioning that there exists attempts to define schema definitions for YAML files. These efforts are geared to achieve at least the following goals - to perform validation, to specify default values for missing entities and most importantly to remove clutter from the YAML message. Kuwata-lab developed a small but useful schema validator for YAML that can perform the above said tasks. This schema validator known as Kwalify \cite{K06} is the most successful among these sets - known till date. Our method, christened as \textbf{YASchema}, is designed with the objective of making YAML as schema aware. The structure of the document and the primitive details regarding the elements of each node can be defined in the schema. Additonal information like expected pattern of inputs to the attribute values can also be added to the schema definition. \textbf{YASchema} has significant improvements over the other methods. First, squeezing techniques are applied to define schema definitions in flow styles. Secondly, elements of schema and their properties are designed in such a way that they require only minimum bytes - this has been done without hampering the readability. Thirdly, facility to define ID codes for elements of YAML are given - this arrangement significantly reduces the size of the original message. Fourthly, the process of reusing the same schema across multiple sessions are envisioned - special directive is specified in the YAML file to specify the schema definition to be referred. In \textbf{section \ref{ressche}} the benefits of these measures are described. 
+
+Apart from constructing the schema entries, identification of ``squeezable'' elements are also being done in this stage. For eg, if the file contains several occurrences of items with the same format like item details in an invoice, these records will be marked as squeezable. This information is utilized in the next stage for further thinning of the contents.  
+The flow chart describing the process involved in this stage is shown in \textbf{Figure 1}.
+
+\subsubsection{\label{desigsy3}Stage III - Substantiation and Confirmation}
+
+The definitions derived from the message regarding its structure could be verified further by the sender. This facility is provided to help the sender for correcting the schema definition, especially when there are a lot of segments of messages with the same structure is to be send. Apart from correction, more details like whether mandatory or not, expected pattern of data etc, can also be added in this stage. 
+
+This stage is helpful in verifying the schema construction made in the earlier stage. Creator of the message can best utilize this stage to correct any anomalies, and add more details also.
+
+\subsubsection{\label{desigsy4}Stage IV - Thinning Phase I}
+
+The attempts for thinning the message size is initiated in this stage. Different styles of serializations are possible in YAML \cite{YA07}. It can be seen that YAML's natural approach of representing information goes as per the guidelines of legacy XML, to certain extent. This adhering to the XML style, provides high degree of readability, simultaneously boosts the memory requirements needed for representing the information. Fortunately, the so called ``Flow style'' method specified in YAML helps one to squeeze the size considerably. In certain cases, when reorganization of the contents to this style, yields better performance. For eg, a complex message consisting of customer invoice having many product details each, can be subjected to this stage, for better conservation of message size.  
+
+There is no significant gain in converting just scalars to this method, as the effort made in this regard did not produce convincing results. Thus, there should be a primary step of identifying portions of the message that are ``fold-able''. This task is well completed in Stage I itself, after the evaluation of each node in the document. Nodes of the categories belong to sequences, mappings, sequences of mappings and mappings of sequences \cite{YA07} are identified and marked as squeezable in that Stage. 
+
+The entire document is scanned and ``squeezable'' portions are squeezed into flow style. (Refer \textbf{Figure 2}). The results are in accordance with our expectations - all categories of the messages reported a convincing advantage, thereby achieving the thinning of messages further. 
+
+\subsubsection{\label{desigsy5}Stage V - Thinning Phase II}
+
+Stage IV mainly capitalizes on the inherent properties of YAML in slicing down the message size. But in this stage, the major enhancements over YAML are effectively employed to maximize the results. In \textbf{section \ref{desigsy2}}, we mentioned about introducing the concept of schema as a value added feature of YAML. This feature is incorporated with the following objectives:
+
+\begin{itemize}
+\item reusing the structure from content - hence sharing of same schema even in multiple sessions.
+\item validating the structure of the message to be exchanged.
+\item thinning of the message by making use of the definitions made in the schema structure.
+\item incorporating standards for Encryption and related mechanisms in the proposed work.
+\item introducing policy based security measures as a value addition to the proposed work.
+\item exploring the possibility of weaving semantics with messaging. 
+\end{itemize}
+
+
+In this Stage, the vast possibilities of making use of YASchema (described in \textbf{section \ref{desigsy2}}) for the purpose of thinning the messages are explored. It is to be noted that all primitive details regarding each and every element in the message are defined in the schema, in the schema creation stage. In addition to this, special ID codes are provided for each element. 
+
+Armed with this facilities, a scan over the message is done and the elements are encoded with the ID codes. ID codes could be referred from the accompanying schema, or if the sender  would like to reuse a schema that had been sent earlier, the schema to be referred could be specified in the message itself. Thus the process of decoding also becomes much trouble free. These arrangements yielded convincingly nice results - in fact the performance is superior to YAML in its natural format itself. It can be seen from \textbf{section \ref{resmsg}} that the advantages of this Stage had really contributed to the efficient thinning of message in the original format. (Refer \textbf{Figure 3}).
+
+It is worth mentioning that the arrangements achieved in \textbf{section \ref{desigsy2}} and in this Stage are major contributions to the YAML format as such, for the primary reason that with the creation of YASchema, making the message as schema aware could be achieved. The facility to validate the message contents is a natural outcome of this measure. Most importantly, this value addition resulted in efficient slicing of the message content as well. Other objectives mentioned in this section, are earmarked for our future work as well.
+ 
+\section{\label{res1}Experimental Results and Performance Evaluation}
+
+There can be different kinds of messages exchanged between users with varying features such as size, complexity, structure etc. To establish a consistent result across all these diverse set of messages, five categories of messages are formulated with different degrees of organization. \textbf{Short} type represents the simple messaging format with only text. \textbf{Small} category consists of a single record consisting of String, Float and DateTime types of data. \textbf{Medium} category contained the details of 25 customer records. \textbf{Large} and \textbf{Composite} are constituted as invoice records with varying degrees of complexity. The categories are designed with a view to applying all the stages of the proposed design with the test data and hence to make sure consistency in results. These categories are listed in \textbf{Table 1}.
+
+For each category of messages listed in \textbf{Table 1}, three versions of the same message in each category are serialized - YAML, XML and SOAP serializations. Since our objective here is to propose a standard that is easily prepared, read and that too with less verbosity, XML and SOAP are selected as benchmark candidates. YAML serializations have been done in three versions - Original, After applying Phase I of thinning and After applying Phase II of thinning.
+
+The following measurements are utilized for the purpose of performance evaluation, resource usage and viability of the proposed method:
+
+\begin{itemize}
+\item Schema Size.
+\item Message Size.
+\item Transmission Speed.
+\end{itemize}
+
+\subsection{\label{ressche}Schema Size Analysis}
+
+In \textbf{section \ref{desigsy2}}, the peculiarities of our approach towards schema construction of YAML are mentioned. For each category of messages, schema definitions are created as per the specifications of Kwalify and YASchema. The gain in number of bytes that is achieved as per YASchema definition compared to Kwalify definitions are tabulated in \textbf{Table 2}. It can be seen that schema sizes are squeezed to a considerable extent for all types of messages. For eg, the gain in the schema size in \textbf{Short}, \textbf{Small}, \textbf{Medium}, \textbf{Large} and \textbf{Composite} categories over Kwalify can be estimated as 245, 539, 601, 1023 and 1089 bytes respectively. \textbf{Short} category reported the maximum advantage (66.94\%). In the cases of possibilities for repeated occurrences of records like in \textbf{Large} and \textbf{Composite} category, the performance gain (53.23\% and 54.78\% respectively) is really a point worth mentionable. In the most widely used \textbf{Medium} category the gain crossed over 50\%. This performance gain is impressive, taking into consideration of the fact of the re-usability of the schema over multiple streams.
+
+From the results it is evident that YASchema outperforms its counterpart in all 5 message types - on an average, the overall performance is above 50\% (Refer \textbf{Figure 4}). It is worth mentioning that this gain is maintained even after incorporating new entries to the schema like provision to add ID codes and flags. This gain is significant, especially in the case of transmitting a set of messages with a common schema. Hence it is evident that whenever there is a schema that is shared by many sets of messages, our approach is most appropriate for message transfer.
+
+\subsection{\label{resmsg}Message Size Analysis}
+
+For each category of messages listed in \textbf{Table 1}, messages are codified in YAML, XML and SOAP. As mentioned earlier, YAML itself having three versions - the natural format, format after Phase I of thinning, and format after Phase II of thinning.
+
+The message sizes obtained in each of these categories are listed in \textbf{Table 3}. The sizes of the schema (developed in Stage II) in each category are also included. A quick glance through the results clearly indicate that YAML in its most natural form itself demonstrate better performance than XML and SOAP. 
+
+The gain in message size (in bytes) using YAML, over messages formed by XML \& SOAP is shown in \textbf{Table 4}. The gain in size of messages (in YAML Original form) in \textbf{Short}, \textbf{Small}, \textbf{Medium}, \textbf{Large} and \textbf{Composite} categories over XML are 46, 153, 2816, 5024 and 19277 bytes respectively. The gap widens to 167, 292, 5189, 6114 and 20652 bytes respectively against the message sizes achieved in SOAP. Thus there is an overall gain of around 25\% against XML and 35\% against SOAP, when the YAML is used in its ``natural'' format (\textbf{Figure 5}).
+% \textbf{Table 6} displays the gain in message size (in bytes) when YAML after Thinning Phase I
+
+After applying thinning measures in Phase I, there is a marginal increase in the performance.  \textbf{Table 5} displays the gain in message size (in bytes) compared to XML \& SOAP versions, when YAML after Thinning Phase I is applied. The gain in size of messages (in YAML After Thinning I) in \textbf{Short}, \textbf{Small}, \textbf{Medium}, \textbf{Large} and \textbf{Composite} categories over XML are 71, 220, 6521, 12922 and 43977 bytes, respectively. Similar results can be seen for SOAP also. The average gain is increased to 54.60\% and 63.92\% against XML and SOAP respectively (\textbf{Figure 6}). 
+
+The performance achieved in Phase I itself over YAML can be derived from \textbf{Table 6}. It can be seen that there is a remarkable difference in size of YAML messages after Phase I, when  compared to the YAML original. The gain can be seen as 25, 67, 3705, 7898 and 24700 bytes in the categories \textbf{Short}, \textbf{Small}, \textbf{Medium}, \textbf{Large} and \textbf{Composite} respectively. 
+
+Results after Phase II of thinning are very critical as far as the viability of the proposed method is concerned. After applying the value added features over YAML, it is found that still the performance gain is really impressive. Advantages achieved in the message size, after applying Phase II of Thinning is tabulated in \textbf{Table 7}. After Phase II, schema size also is to be considered as part of the message. Performance after thinning YAML (Phase II) over XML \& SOAP, including and excluding the sizes of corresponding schemas are shown in the table. The performance gain of all the five categories of messages compared to XML can be seen as 74, 250, 7217, 12951 and 44927 bytes respectively (\textbf{Table 7}). The gain is steadily maintained at 62\% and 67\% against XML and SOAP respectively, for messages categories of larger sizes (\textbf{Figure 7}). This measurement is excluding the size needed for schema. It is to be noted that additional overhead needed for schema results in a gain of -147, 0 bytes over XML for \textbf{Short} and \textbf{Small} categories respectively. But the gain is evident in all remaining categories : 6641, 12052, 44028 bytes in \textbf{Medium}, \textbf{Large} and \textbf{Composite} categories respectively. The trend remains positive (gain is maintained) for SOAP. But this phenomenon of decline in gain in \textbf{Short} category and zero gain in \textbf{Small} category, with respect to XML, need not be taken negatively; rather it is an advantage due to the reasons mentioned below. 
+
+It appears as if that for small message types, especially for \textbf{Short} and \textbf{Simple}, applying thinning measures beyond Phase I is not viable, if these messages just send on one-time basis. (But actually, if the overhead needed to maintain the schema for XML is also taken into account, the picture will be different - YAML (Phase II) will outperform XML in all categories.) This is because, even though there is a marginal gain (Eg:- in \textbf{Short} category there is a gain of 28 bytes [38.7\%] and in \textbf{Simple} category, the gain is 97 bytes [54\%]) in message size, introduction of schema adds more bytes to the total size of the message. But this trade off will be really advantageous when there is a need to send multiple messages with the same structure - as transmission of schema will be only a one-time payload. For other categories of messages, (especially for larger types the gain is in the order of 60\%) the arrangement works well, due to the thinning measures adopted in two phases. It can be seen that the additional payload is a necessity, in order to maintain the correctness of the message after transmission. Also as mentioned in \textbf{section \ref{desigsy3}}, it can be effectively used for the purpose of safely imposing policy based protection to the message as well as specifications of security standards.
+
+Performance achieved in slicing down the size of messages after the two phases of thinning compared to YAML in its natural format is displayed in \textbf{Table 8}. It is evident from the results that the advantages secured after the introduction of thinning measures, especially Phase II coupled with the introduction of schema are really superior. The performance gain achieved after Thinning I \& II over YAML itself can be derived as  28, 97, 4401, 7927 and 25650 bytes respectively for categories \textbf{Short}, \textbf{Small}, \textbf{Medium}, \textbf{Large} and \textbf{Composite} respectively. When the schema size are also accounted, the trend remains positive for \textbf{Medium}, \textbf{Large} and \textbf{Composite} categories (3825, 7028 and 24751 bytes respectively). As expected, the additional payload of schema resulted in a gain of -193 and -153 bytes in \textbf{Short} and \textbf{Small} categories. But as already mentioned, when messages with same structure are streamed multiple times, these additional burden will be safely considered as an advantage - not just for size consideration alone, but for other considerations like removing clutter from the message text, validation and security aspects are also taken into account.
+
+\subsection{\label{restra}Transmission Time Analysis}
+Transmission speed is a very important factor for real time applications. For our measurements, three classes of record sets, with varying levels of complexity are formed for this analysis - \textbf{Simple}, \textbf{Medium} and \textbf{Complex}. The bytes required for the representation of record sets are considered for the measurement of transmission speed. The no of bytes needed to represent each of these records sets are tabulated in \textbf{Table 9}. 
+
+Assuming that there are no packet loss,  transmission times of theoretical constant link speeds of 64kbps and 256kbps, are utilized for this analysis. It is evident that the actual performance would be worse than the times theoretically calculated here due to various limitations like packet loss, retransmission and noise etc. Apart from this, limitations imposed by protocols can also degrade the performance of transmission speed. For eg, the Maximum Segment Size (MSS) in TCP/IP on an Ethernet network is generally set to 1460 bytes \cite{T06}. 
+
+It can be seen from the \textbf{Table 9} that each of the YAML data sizes, especially the \textbf{Complex} type, just fit well into the limits of single TCP/IP MSS after two phases of thinning. The record sizes of the XML and SOAP in Complex category are greater than the MSS, which forces the data to be segmented into multiple packets.  
+
+The time required for transmitting the record sets over 64kbps and 256kbps are tabulated in \textbf{Table 10} and \textbf{Table 11} respectively. A glance over the results reveal the advantages of YAML, especially after applying the two phases of thinning. 
+
+Comparison in the transmission speed (64kbps link) of YAML record sets over that of XML and SOAP are shown in \textbf{Table 12}. It can be concluded from the table that YAML record set outperforms XML record set by a factor of 1.3 for \textbf{Small} type,  1.4 for \textbf{Medium} and 2.71 for \textbf{Complex} type. 
+
+The gap is getting widened when thinning phase I was applied. The values of transmission speed of YAML Phase I, XML and SOAP record sets can be seen in \textbf{Table 13}. Notable advantages are visible in \textbf{Small} and \textbf{Complex} categories - by a factor 2.12 \& 4.98 (XML), 1.63 \& 5.3 (SOAP) respectively.
+
+After applying phase II of thinning, we have the maximum advantage (Refer \textbf{Table 14}) -  by a factor of 2.18 for \textbf{Small} type,  1.71 for \textbf{Medium} type and 5.14 for \textbf{Complex} type. Similar results can be derived for SOAP record sets also. Hence the superiority in performance of YAML (after two phases of thinning) over XML and SOAP, is clearly asserted in all categories (\textbf{Figure 8}).
+
+One interesting factor is the improvements over the transmission speeds of the ``enhanced'' YAML (after applying the two phases of thinning) record sets over the ``natural'' YAML  - by factor of 1.65 (\textbf{Small}), 1.23 (\textbf{Medium}) and 1.9 (\textbf{Complex}). These gains are significant as this is being achieved without applying a binary encoding to the original message - in another words without hampering the readability and user friendliness. It is to be specially noted that, like in the preceding sections, ``enhanced'' YAML has significant improvements over ``natural'' YAML in all aspects.
+
+\section{\label{res}Conclusion and Future Work}
+
+This paper describes about the need to have an alternative messaging system - that is adapting the advantages of XML, but at the same time killing the limitations of it. The proposed system is based on YAML, a user friendly and light weight messaging format. Maintaining the agility of XML as such, YAML simply makes the process of preparing the message quite easier, with much less bytes of storage size. Significant improvements are achieved by applying thinning measures to the YAML format, even introducing a schema definition for the files. Our experiments clearly indicate that the performance of the proposed method outperforms the existing approaches. Introduction of a light weight platform for mobile messaging, the approach towards separation of data and content, by formulating a schema construction mechanism and further thinning measures really helped in slicing down the overall message size, sizes of various types of records sets and schema constructs. Interestingly these experiments revealed that the thinning measures that we suggested made considerable gains over the ``natural'' form of YAML also. It is significant to note that these achievements are made possible without hampering the readability of the original message format. 
+
+Our main focus here was to propose a standard that is simple, readable, easily editable and most importantly with less bandwidth requirements. However, several improvements and additions are necessary to evolve this method as a promising messaging protocol. First, a facility for a still better encoding to preferably ASN.1 \cite{AS07}, in the circumstances where ultimate squeezing of message is most needed. Also it is intended to include binary encoded serialization as also a benchmark, in our future work of encoding the proposed standard to ASN.1. Secondly there is a need to include security standards to be embedded to the message format at par with the specifications for XML Encryption and other related specifications. Thirdly this has to be coupled with introduction of a policy based security mechanism by the better utilization of schema constructs. Ultimately the possibility of weaving semantics to the messaging standards should also be looked into. 
+
+\bibliographystyle{unsrt}	
+
+\nocite{*}		
+
+\bibliography{p050030cs}
+
+\onecolumn
+\begin{figure}
+\begin{center}
+\scalebox{0.65}
+{\includegraphics{flow1.png}}
+\caption{System Architecture - Stage II} \label{Fig:2}
+\end{center}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\scalebox{0.75}
+{\includegraphics{flow2.png}}
+\caption{System Architecture - Stage IV} \label{Fig:3}
+\end{center}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\scalebox{0.70}
+{\includegraphics{flow3.png}}
+\caption{System Architecture - Stage V}  \label{Fig:3}
+\end{center}
+\end{figure}
+
+\begin{table}[ht]
+\caption{Message Categories}   % title of Table
+\centering                          % used for centering table
+%\begin{tabular}{| l | l |}              % centered columns (4 columns)
+\begin{tabular}{ l  l }              % centered columns (4 columns)
+\hline                        %inserts double horizontal lines
+\cline{1-2}
+\textbf{Type} & \textbf{Remarks} \\ [0.5ex]   % inserts table heading
+\hline                              % inserts single horizontal line
+\cline{1-2}
+Short  & Size 50 bytes \\               % inserting body of the table
+%\cline{1-2}
+Small & 1 Record - String, Float, DateTime \\
+%\cline{1-2}
+Medium & 25 Records - String, Float, DateTime \\
+%\cline{1-2}
+Large  & 1 Customer with 75 products \\
+%\cline{1-2}
+Composite & 25 Customers with 10 products each \\ [1ex]         % [1ex] adds vertical space
+\hline                              %inserts single line
+\cline{1-2}
+\end{tabular}
+\label{table:nonlin}          % is used to refer this table in the text
+\end{table}
+
+\begin{table}[ht]
+\caption{Schema Size Analysis}   % title of Table
+\centering                          % used for centering table
+%\begin{tabular}{| l | l | r | r || r |}              % centered columns (4 columns)
+\begin{tabular}{l  r  r  r }              % centered columns (4 columns)
+\hline                        %inserts double horizontal lines
+\cline{1-4}
+%\textbf{No} & \textbf{Messages Categories} &\multicolumn{3}{c|}{\textbf{Schema Size (in bytes)}} \\ [0.5ex]   % inserts table heading
+\textbf{Message Categories} &\multicolumn{3}{c}{\textbf{Schema Size (in bytes)}} \\ [0.5ex]   % inserts table heading
+%\cline{3-5}
+& \textbf{Kwalify} & \textbf{YASchema} & \textbf{Gain \%} \\
+\hline
+\cline{1-4}
+Short  & 366 & 121 & 66.94\\               % inserting body of the table
+%\hline
+Small & 987 & 448 & 54.61\\
+%\hline
+Medium & 1177 & 576 & 51.06  \\
+%\hline
+Large  & 1922 & 899 & 53.23 \\
+%\hline
+Composite & 1988 & 899 & 54.78\\ [1ex]         % [1ex] adds vertical space
+\hline                              %inserts single line
+\cline{1-4}
+\end{tabular}
+\label{table:nonlin}          % is used to refer this table in the text
+\end{table}
+
+%\onecolumn
+
+\begin{table}[ht]
+\caption{Comparison - Message Size}   % title of Table
+\centering                          % used for centering table
+%\begin{tabular}{|l|l||r|r|r|r||r|r|}
+\begin{tabular}{l r r r r r r}
+\hline                        %inserts double horizontal lines
+\cline{1-7}
+%\textbf{No} & \textbf{Type} &\multicolumn{4}{c||}{\textbf{YAML}} & \textbf{XML} & \textbf{SOAP} \\ [0.5ex]
+\textbf{Type} &\multicolumn{4}{c}{\textbf{YAML}} & \textbf{XML} & \textbf{SOAP} \\ [0.5ex]
+%\cline{3-6}
+%& & \textbf{Original} & \textbf{Thinning I} & \textbf{Thinning II} & \textbf{Schema} & &\\
+& \textbf{Original} & \textbf{Thinning I} & \textbf{Thinning II} & \textbf{Schema} & &\\
+\hline
+\cline{1-7}
+Short & 145 & 120 & 117 & 221 & 191 & 312\\
+%\cline{1-8}
+Small & 312 & 245 & 215 & 250 & 465 & 604\\
+%\cline{1-8}
+Medium & 8128 & 4423 & 3727 & 576 & 10944 & 13317\\ 
+%\cline{1-8}
+Large  & 13799 & 5901 & 5872 & 899 & 18823 & 19913\\
+%\cline{1-8}
+Composite & 54292 & 29592 & 28642 & 899 & 73569 & 74944\\
+\cline{1-7}
+\hline
+\end{tabular}
+\label{table:nonlin}          % is used to refer this table in the text
+\end{table}
+
+%\begin{table}[ht]
+%\caption{Comparison - Message Size}   % title of Table
+%\centering                          % used for centering table
+%\begin{tabular}{|l|l||r|r|r|r||r|r|}
+%\hline\hline                        %inserts double horizontal lines
+%\textbf{No} & \textbf{Type} &\multicolumn{4}{c||}{\textbf{YAML}} & \textbf{XML} & \textbf{SOAP} \\ [0.5ex]
+%\cline{3-6}
+% & & \textbf{Original} & \textbf{Thinning I} & \textbf{Thinning II} & \textbf{Schema} & &\\
+%\hline\hline
+%1 & Short & 145 & 120 & 117 & 221 & 191 & 312\\
+%\cline{1-8}
+%2 & Small & 312 & 245 & 215 & 250 & 465 & 604\\
+%\cline{1-8}
+%3 & Medium & 8128 & 4423 & 3727 & 576 & 10944 & 13317\\ 
+%\cline{1-8}
+%4 & Large  & 13799 & 5901 & 5872 & 899 & 18823 & 19913\\
+%\cline{1-8}
+%5 & Composite & 54292 & 29592 & 28642 & 899 & 73569 & 74944\\
+%\cline{1-8}
+%\hline
+%\end{tabular}
+%\label{table:nonlin}          % is used to refer this table in the text
+%\end{table}
+
+
+% Comparison - Gain Achieved in Message Size (in bytes) with YAML
+\begin{table}[ht]
+\caption{Comparison - Gain Achieved in Message Size (in bytes) with YAML}   % title of Table
+\centering                          % used for centering table
+\begin{tabular}{l r r r r r}
+\hline                        %inserts double horizontal lines
+\cline{1-6}
+\textbf{Message} & \textbf{YAML} & \textbf{XML} & \textbf{SOAP} &\multicolumn{2}{c}{\textbf{Gain Over}}\\ [0.5ex]
+%\cline{6-7}
+\textbf{Category} & & & & \textbf{XML} & \textbf{SOAP} \\ [0.5ex]
+& \textbf{(a)} & \textbf{(b)} & \textbf{(c)} & \textbf{(b - a)} & \textbf{(c - a)} \\ [0.5ex]
+\hline
+\cline{1-6}
+Short & 145 & 191 & 312 & 46 & 167 \\
+%\cline{1-7}
+Small & 312 & 465 & 604 & 153 & 292 \\
+%\cline{1-7}
+Medium & 8128 & 10944 & 13317 & 2816 & 5189 \\ 
+%\cline{1-7}
+Large  & 13799 & 18823 & 19913 & 5024 & 6144\\
+%\cline{1-7}
+Composite & 54292 & 73569 & 74944 & 19277 & 20652\\
+\cline{1-6}
+\hline
+\end{tabular}
+\label{table:nonlin}          % is used to refer this table in the text
+\end{table}
+%
+
+% Comparison - Gain Achieved in Message Size (in bytes) with YAML
+%\begin{table}[ht]
+%\caption{Comparison - Gain Achieved in Message Size (in bytes) with YAML}   % title of Table
+%\centering                          % used for centering table
+%\begin{tabular}{|l|l||r|r|r||r|r|}
+%\hline\hline                        %inserts double horizontal lines
+%\textbf{No} & \textbf{Message} & \textbf{YAML} & \textbf{XML} & \textbf{SOAP} &\multicolumn{2}{c|}{\textbf{Gain Over}}\\ [0.5ex]
+%\cline{6-7}
+%& \textbf{Category} & & & & \textbf{XML} & \textbf{SOAP} \\ [0.5ex]
+%& & \textbf{(a)} & \textbf{(b)} & \textbf{(c)} & \textbf{(b - a)} & \textbf{(c - a)} \\ [0.5ex]
+%\cline{1-7}
+%\hline\hline
+%1 & Short & 145 & 191 & 312 & 46 & 167 \\
+%\cline{1-7}
+%2 & Small & 312 & 465 & 604 & 153 & 292 \\
+%\cline{1-7}
+%3 & Medium & 8128 & 10944 & 13317 & 2816 & 5189 \\ 
+%\cline{1-7}
+%4 & Large  & 13799 & 18823 & 19913 & 5024 & 6144\\
+%\cline{1-7}
+%5 & Composite & 54292 & 73569 & 74944 & 19277 & 20652\\
+%\cline{1-7}
+%\hline
+%\end{tabular}
+%\label{table:nonlin}          % is used to refer this table in the text
+%\end{table}
+%
+
+% Comparison - Gain Achieved in Message Size (in bytes) with YAML After Phase I
+\begin{table}[ht]
+\caption{Comparison - Gain Achieved in Message Size (in bytes) with YAML After Phase I}   % title of Table
+\centering                          % used for centering table
+\begin{tabular}{l r r r r r}
+\hline                        %inserts horizontal lines
+\cline{1-6}
+\textbf{Message} & \textbf{YAML} & \textbf{XML} & \textbf{SOAP} &\multicolumn{2}{c}{\textbf{Gain Over}}\\ [0.5ex]
+%\cline{6-7}
+\textbf{Category} & \textbf{Phase I} & & & \textbf{XML} & \textbf{SOAP} \\ [0.5ex]
+& \textbf{(a)} & \textbf{(b)} & \textbf{(c)} & \textbf{(b - a)} & \textbf{(c - a)} \\ [0.5ex]
+\hline
+\cline{1-6}
+Short & 120 & 191 & 312 & 71 & 192 \\
+%\cline{1-7}
+Small & 245 & 465 & 604 & 220 & 359 \\
+%\cline{1-7}
+Medium & 4423 & 10944 & 13317 & 6521 & 8894 \\ 
+%\cline{1-7}
+Large  & 5901 & 18823 & 19913 & 12922 & 14012\\
+%\cline{1-7}
+Composite & 29592 & 73569 & 74944 & 43977 & 45352\\
+\hline
+\cline{1-6}
+\end{tabular}
+\label{table:nonlin}          % is used to refer this table in the text
+\end{table}
+%
+
+% Comparison - Gain Achieved in Message Size (in bytes) with YAML After Phase I
+%\begin{table}[ht]
+%\caption{Comparison - Gain Achieved in Message Size (in bytes) with YAML After Phase I}   % title of Table
+%\centering                          % used for centering table
+%\begin{tabular}{|l|l||r|r|r||r|r|}
+%\hline\hline                        %inserts double horizontal lines
+%\textbf{No} & \textbf{Message} & \textbf{YAML} & \textbf{XML} & \textbf{SOAP} &\multicolumn{2}{c|}{\textbf{Gain Over}}\\ [0.5ex]
+%\cline{6-7}
+%& \textbf{Category} & \textbf{Phase I} & & & \textbf{XML} & \textbf{SOAP} \\ [0.5ex]
+%& & \textbf{(a)} & \textbf{(b)} & \textbf{(c)} & \textbf{(b - a)} & \textbf{(c - a)} \\ [0.5ex]
+%\cline{1-7}
+%\hline\hline
+%1 & Short & 120 & 191 & 312 & 71 & 192 \\
+%\cline{1-7}
+%2 & Small & 245 & 465 & 604 & 220 & 359 \\
+%\cline{1-7}
+%3 & Medium & 4423 & 10944 & 13317 & 6521 & 8894 \\ 
+%\cline{1-7}
+%4 & Large  & 5901 & 18823 & 19913 & 12922 & 14012\\
+%\cline{1-7}
+%5 & Composite & 29592 & 73569 & 74944 & 43977 & 45352\\
+%\cline{1-7}
+%\hline
+%\end{tabular}
+%\label{table:nonlin}          % is used to refer this table in the text
+%\end{table}
+%
+
+% Comparison - Gain Achieved in Message Size (in bytes) with YAML After Phase I Over YAML
+\begin{table}[ht]
+\caption{Comparison - Gain Achieved in Message Size (in bytes) with YAML After Phase I Over YAML}   % title of Table
+\centering                          % used for centering table
+\begin{tabular}{l r r r}
+\hline                        %inserts horizontal lines
+\cline{1-4}
+\textbf{Message Category} & \textbf{YAML} & \textbf{YAML Phase I} & \textbf{Gain Over YAML} \\ [0.5ex]
+& \textbf{(a)} & \textbf{(b)} & \textbf{(a - b)}\\ [0.5ex]
+\hline
+\cline{1-4}
+Short & 145 & 120 & 25  \\
+Small & 312 & 245 & 67 \\
+Medium & 8128 & 4423 & 3705 \\ 
+Large  & 13799 & 5901 & 7898 \\
+Composite & 54292 & 29592 & 24700 \\
+\cline{1-5}
+\hline
+\end{tabular}
+\label{table:nonlin}          % is used to refer this table in the text
+\end{table}
+%
+
+% Comparison - Gain Achieved in Message Size (in bytes) with YAML After Phase I Over YAML
+%\begin{table}[ht]
+%\caption{Comparison - Gain Achieved in Message Size (in bytes) with YAML After Phase I Over YAML}   % title of Table
+%\centering                          % used for centering table
+%\begin{tabular}{|l|l||r|r||r|}
+%\hline\hline                        %inserts double horizontal lines
+%\textbf{No} & \textbf{Message Category} & \textbf{YAML} & \textbf{YAML Phase I} & \textbf{Gain Over YAML} \\ [0.5ex]
+%& & \textbf{(a)} & \textbf{(b)} & \textbf{(a - b)}\\ [0.5ex]
+%\cline{1-5}
+%\hline\hline
+%1 & Short & 145 & 120 & 25  \\
+%\cline{1-5}
+%2 & Small & 312 & 245 & 67 \\
+%\cline{1-5}
+%3 & Medium & 8128 & 4423 & 3705 \\ 
+%\cline{1-5}
+%4 & Large  & 13799 & 5901 & 7898 \\
+%\cline{1-5}
+%5 & Composite & 54292 & 29592 & 24700 \\
+%\cline{1-5}
+%\hline
+%\end{tabular}
+%\label{table:nonlin}          % is used to refer this table in the text
+%\end{table}
+%
+
+
+% Comparison - Gain Achieved in Message Size (in bytes) with YAML After Phase II
+\begin{table}[ht]
+\caption{Comparison - Gain Achieved in Message Size (in bytes) with YAML After Phase II}   % title of Table
+\centering                          % used for centering table
+\begin{tabular}{l r r r r r r r r}
+\hline                        %inserts horizontal lines
+\cline{1-9}
+\textbf{Message} & \textbf{YAML} & \textbf{Schema} & \textbf{XML} & \textbf{SOAP} &\multicolumn{2}{c}{\textbf{Gain Over}} &\multicolumn{2}{c}{\textbf{Gain Over}} \\ [0.5ex]
+%
+\textbf{Category} & \textbf{Phase II} &  & & & \multicolumn{2}{c}{\textbf{(Excluding Schema)}} & \multicolumn{2}{c}{\textbf{(Including Schema)}} \\ [0.5ex]
+%
+%\cline{7-10}
+%
+& & & & & \textbf{XML} & \textbf{SOAP} & \textbf{XML} & \textbf{SOAP} \\ [0.5ex]
+%
+& \textbf{(a)} & \textbf{(b)} & \textbf{(c)} & \textbf{(d)} & \textbf{(c - a)} & \textbf{(d - a)} & \textbf{(c-(a+b))} & \textbf{(d-(a+b))} \\ [0.5ex]
+\hline
+\cline{1-9}
+Short & 117 & 221 & 191 & 312 & 74 & 195 & -147 & -26   \\
+Small & 215 & 250 & 465 & 604 & 250 & 389 & 0 & 139\\
+Medium & 3727 & 576 & 10944 & 13317 & 7217 & 7445 & 6641 & 9014\\ 
+Large  & 5872 & 899 & 18823 & 19913 & 12951 & 14041 & 12052 & 13142 \\
+Composite & 28642 & 899 & 73569 & 74944 & 44927 & 46302 & 44028 & 45403\\
+\hline
+\cline{1-9}
+\end{tabular}
+\label{table:nonlin}          % is used to refer this table in the text
+\end{table}
+%
+
+% Comparison - Gain Achieved in Message Size (in bytes) with YAML After Phase II
+%\begin{table}[ht]
+%\caption{Comparison - Gain Achieved in Message Size (in bytes) with YAML After Phase II}   % title of Table
+%\centering                          % used for centering table
+%\begin{tabular}{|l|l||r|r||r|r||r|r||r|r|}
+%\hline\hline                        %inserts double horizontal lines
+%\textbf{No} & \textbf{Message} & \textbf{YAML} & \textbf{Schema} & \textbf{XML} & \textbf{SOAP} &\multicolumn{2}{c||}{\textbf{Gain Over}} &\multicolumn{2}{c|}{\textbf{Gain Over}} \\ [0.5ex]
+%
+%& \textbf{Category} & \textbf{Phase II} &  & & & \multicolumn{2}{c||}{\textbf{(Excluding Schema)}} & \multicolumn{2}{c|}{\textbf{(Including Schema)}} \\ [0.5ex]
+%
+%\cline{7-10}
+%
+%& & & & & & \textbf{XML} & \textbf{SOAP} & \textbf{XML} & \textbf{SOAP} \\ [0.5ex]
+%
+%& & \textbf{(a)} & \textbf{(b)} & \textbf{(c)} & \textbf{(d)} & \textbf{(c - a)} & \textbf{(d - a)} & \textbf{(c-(a+b))} & %\textbf{(d-(a+b))} \\ [0.5ex]
+%\hline
+%\cline{1-10}
+%\hline\hline
+%1 & Short & 117 & 221 & 191 & 312 & 74 & 195 & -147 & -26   \\
+%\cline{1-10}
+%2 & Small & 215 & 250 & 465 & 604 & 250 & 389 & 0 & 139\\
+%\cline{1-10}
+%3 & Medium & 3727 & 576 & 10944 & 13317 & 7217 & 7445 & 6641 & 9014\\ 
+%\cline{1-10}
+%4 & Large  & 5872 & 899 & 18823 & 19913 & 12951 & 14041 & 12052 & 13142 \\
+%\cline{1-10}
+%5 & Composite & 28642 & 899 & 73569 & 74944 & 44927 & 46302 & 44028 & 45403\\
+%\cline{1-10}
+%\hline
+%\end{tabular}
+%\label{table:nonlin}          % is used to refer this table in the text
+%\end{table}
+%
+
+
+% Comparison - Gain Achieved in Message Size (in bytes) with YAML After Phase II Over YAML
+\begin{table}[ht]
+\caption{Comparison - Gain Achieved in Message Size (in bytes) with YAML After Phase II Over YAML}   % title of Table
+\centering                          % used for centering table
+\begin{tabular}{l r r r r r}
+\hline                        %inserts horizontal lines
+\cline{1-6}
+\textbf{Message} & \textbf{YAML} & \multicolumn{2}{c}{\textbf{Phase II}} & \multicolumn{2}{c}{\textbf{Gain Over}} \\ [0.5ex]
+%
+%\hline 
+\textbf{Category} & & \textbf{YAML} & \textbf{Schema} & \multicolumn{2}{c}{\textbf{YAML}} \\ [0.5ex]
+\hline
+\cline{1-6}
+%\hline
+& & & & \textbf{(Excluding Schema)} & \textbf{(Including Schema)} \\ [0.5ex]
+& \textbf{(a)} & \textbf{(b)} & \textbf{(c)} & \textbf{(a - b)} & \textbf{(a - (b + c))} \\ [0.5ex]
+\hline
+\cline{1-6}
+Short & 145 & 117 & 221 & 28 & -193  \\
+Small & 312 & 215 & 250 & 97 & -153 \\
+Medium & 8128 & 3727 & 576 & 4401 & 3825\\ 
+Large  & 13799 & 5872 & 899 & 7927 & 7028 \\
+Composite & 54292 & 28642 & 899 & 25650 & 24751\\
+\hline
+\cline{1-6}
+\end{tabular}
+\label{table:nonlin}          % is used to refer this table in the text
+\end{table}
+%
+
+% Comparison - Gain Achieved in Message Size (in bytes) with YAML After Phase II Over YAML
+%\begin{table}[ht]
+%\caption{Comparison - Gain Achieved in Message Size (in bytes) with YAML After Phase II Over YAML}   % title of Table
+%\centering                          % used for centering table
+%\begin{tabular}{|l|l||r||r|r||r|r|}
+%\hline\hline                        %inserts double horizontal lines
+%\textbf{No} & \textbf{Message} & \textbf{YAML} & \multicolumn{2}{c||}{\textbf{Phase II}} & \multicolumn{2}{c|}{\textbf{Gain Over}} \\ [0.5ex]
+%
+%\hline 
+%\cline{4-5}
+%\hline
+%& \textbf{Category} & & \textbf{YAML} & \textbf{Schema} & \multicolumn{2}{c|}{\textbf{YAML}} \\ [0.5ex]
+%
+%\hline
+%\cline{6-7}
+%\hline
+%& & & & & \textbf{(Excluding Schema)} & \textbf{(Including Schema)} \\ [0.5ex]
+%& & \textbf{(a)} & \textbf{(b)} & \textbf{(c)} & \textbf{(a - b)} & \textbf{(a - (b + c))} \\ [0.5ex]
+%\hline\hline
+%\cline{1-7}
+%1 & Short & 145 & 117 & 221 & 28 & -193  \\
+%\cline{1-7}
+%2 & Small & 312 & 215 & 250 & 97 & -153 \\
+%\cline{1-7}
+%3 & Medium & 8128 & 3727 & 576 & 4401 & 3825\\ 
+%\cline{1-7}
+%4 & Large  & 13799 & 5872 & 899 & 7927 & 7028 \\
+%\cline{1-7}
+%5 & Composite & 54292 & 28642 & 899 & 25650 & 24751\\
+%\cline{1-7}
+%\hline
+%\end{tabular}
+%\label{table:nonlin}          % is used to refer this table in the text
+%\end{table}
+%
+
+\begin{table}[ht]
+\caption{Record Sets - Categories}   % title of Table
+\centering                          % used for centering table
+\begin{tabular}{l r r r r r}
+\hline                        %inserts horizontal lines
+\cline{1-6}
+\textbf{Type} &\multicolumn{3}{c}{\textbf{YAML}} & \textbf{XML} & \textbf{SOAP} \\ [0.5ex]
+& \textbf{Original} & \textbf{Thinning I} & \textbf{Thinning II} & &\\
+\hline
+\cline{1-6} 
+Small & 145 & 120 & 117 & 191 & 312\\ 
+Medium & 320 & 281 & 260 & 445 & 487 \\ 
+Complex & 2171 & 1182 & 1144 & 5881 & 6250 \\
+\hline
+\cline{1-6}
+\end{tabular}
+\label{table:nonlin}          % is used to refer this table in the text
+\end{table}
+
+
+%\begin{table}[ht]
+%\caption{Record Sets - Categories}   % title of Table
+%\centering                          % used for centering table
+%\begin{tabular}{|l|l||r|r|r||r|r|}
+%\hline\hline                        %inserts double horizontal lines
+%No & Type &\multicolumn{3}{c||}{\textbf{YAML}} & \textbf{XML} & \textbf{SOAP} \\ [0.5ex]
+%\cline{3-6}
+% & & \textbf{Original} & \textbf{Thinning I} & \textbf{Thinning II} & &\\
+%\hline\hline 
+%1 & Small & 145 & 120 & 117 & 191 & 312\\ 
+%\cline{1-7}
+%2 & Medium & 320 & 281 & 260 & 445 & 487 \\ 
+%\cline{1-7}
+%3 & Complex & 2171 & 1182 & 1144 & 5881 & 6250 \\
+%\cline{1-7}
+%\hline
+%\end{tabular}
+%\label{table:nonlin}          % is used to refer this table in the text
+%\end{table}
+
+\begin{table}[ht]
+\caption{Transmission Speed (in msecs)  using 64kbps link}   % title of Table
+\centering                          % used for centering table
+\begin{tabular}{l r r r r r}
+\hline                        %inserts horizontal lines
+\cline{1-6}
+\textbf{Type} &\multicolumn{3}{c}{\textbf{YAML}} & \textbf{XML} & \textbf{SOAP} \\ [0.5ex]
+& \textbf{Original} & \textbf{Thinning I} & \textbf{Thinning II} & &\\
+\hline
+\cline{1-6} 				
+Small & 17.7 & 11 & 10.71 & 23.32 & 38.09\\  
+Medium & 39.06 & 34.3 & 31.74 & 54.32 & 59.45\\ 
+Complex & 265.01 & 144.23 & 139.65 & 717.9 & 762.9 \\
+\hline
+\cline{1-6}
+\end{tabular}
+\label{table:nonlin}          % is used to refer this table in the text
+\end{table}
+
+
+%\begin{table}[ht]
+%\caption{Transmission Speed (in msecs)  using 64kbps link}   % title of Table
+%\centering                          % used for centering table
+%\begin{tabular}{|l|l||r|r|r||r|r|}
+%\hline\hline                        %inserts double horizontal lines
+%\textbf{No} & \textbf{Type} &\multicolumn{3}{c||}{\textbf{YAML}} & \textbf{XML} & \textbf{SOAP} \\ [0.5ex]
+%\cline{3-5}
+% & & Original & Thinning I & Thinning II & &\\
+%\hline\hline 				
+%1 & Small & 17.7 & 11 & 10.71 & 23.32 & 38.09\\  
+%\cline{1-7}
+%2 & Medium & 39.06 & 34.3 & 31.74 & 54.32 & 59.45\\ 
+%\cline{1-7}
+%3 & Complex & 265.01 & 144.23 & 139.65 & 717.9 & 762.9 \\
+%\cline{1-7}
+%\hline
+%\end{tabular}
+%\label{table:nonlin}          % is used to refer this table in the text
+%\end{table}
+
+\begin{table}[ht]
+\caption{Transmission Speed (in msecs)  using 256kbps link}   % title of Table
+\centering                          % used for centering table
+\begin{tabular}{l r r r r r}
+\hline                        %inserts horizontal lines
+\cline{1-6}
+\textbf{Type} &\multicolumn{3}{c}{\textbf{YAML}} & \textbf{XML} & \textbf{SOAP} \\ [0.5ex]
+& \textbf{Original} & \textbf{Thinning I} & \textbf{Thinning II} & &\\
+\hline 				
+\cline{1-6}
+Small & 4.4 & 3.7 & 3.6 & 5.9 & 9.5\\  
+Medium & 9.8 & 8.6	& 7.9 &	13.6 & 14.9\\ 
+Complex & 66.23 & 36.1 & 34.9 & 179.4 & 190.7 \\
+\hline
+\cline{1-6}
+\end{tabular}
+\label{table:nonlin}          % is used to refer this table in the text
+\end{table}
+
+
+%\begin{table}[ht]
+%\caption{Transmission Speed (in msecs)  using 256kbps link}   % title of Table
+%\centering                          % used for centering table
+%\begin{tabular}{|l|l||r|r|r||r|r|}
+%\hline\hline                        %inserts double horizontal lines
+%\textbf{No} & \textbf{Type} &\multicolumn{3}{c||}{\textbf{YAML}} & \textbf{XML} & \textbf{SOAP} \\ [0.5ex]
+%\cline{3-5}
+%& & \textbf{Original} & \textbf{Thinning I} & \textbf{Thinning II} & &\\
+%\hline\hline 				
+%1 & Small & 4.4 & 3.7 & 3.6 & 5.9 & 9.5\\  
+%\cline{1-7} 
+%2 & Medium & 9.8 & 8.6	& 7.9 &	13.6 & 14.9\\ 
+%\cline{1-7} 
+%3 & Complex & 66.23 & 36.1 & 34.9 & 179.4 & 190.7 \\
+%\cline{1-7}
+%\hline
+%\end{tabular}
+%\label{table:nonlin}          % is used to refer this table in the text
+%\end{table}
+
+% Comparison (YAML Vs XML \& SOAP) - Transmission Speed (in msecs)using 64kbps link
+\begin{table}[ht]
+\caption{Comparison (YAML Vs XML \& SOAP) - Transmission Speed (in msecs)using 64kbps link}   % title of Table
+\centering                          % used for centering table
+\begin{tabular}{l r r r r r}
+\hline                        %inserts horizontal lines
+\cline{1-6}
+\textbf{Record Set} & \textbf{YAML} & \textbf{XML} & \textbf{SOAP} & \multicolumn{2}{c} {\textbf{Gain Over}} \\ [0.5ex]
+%
+& \textbf{(a)} & \textbf{(b)} & \textbf{(c)} & \textbf{XML (b/a)} & \textbf{SOAP (c/a)} \\
+\hline
+\cline{1-6} 				
+Small & 17.7 & 23.32 & 38.09 & 1.3 & 2.16\\  
+Medium & 39.06 & 54.32 & 59.45 & 1.4 & 1.52 \\ 
+Complex & 265.01 & 717.9 & 762.9 & 2.71 & 2.88\\
+\hline
+\cline{1-6}
+\end{tabular}
+\label{table:nonlin}          % is used to refer this table in the text
+\end{table}
+
+
+% Comparison (YAML Vs XML \& SOAP) - Transmission Speed (in msecs)using 64kbps link
+%\begin{table}[ht]
+%\caption{Comparison (YAML Vs XML \& SOAP) - Transmission Speed (in msecs)using 64kbps link}   % title of Table
+%\centering                          % used for centering table
+%\begin{tabular}{|l|l||r||r|r||r|r|}
+%\hline\hline                        %inserts double horizontal lines
+%\textbf{No} & \textbf{Record Set} & \textbf{YAML} & \textbf{XML} & \textbf{SOAP} & \multicolumn{2}{c|} {\textbf{Gain Over}} \\ [0.5ex]
+%
+%\cline{6-7}
+%& & \textbf{(a)} & \textbf{(b)} & \textbf{(c)} & \textbf{XML (b/a)} & \textbf{SOAP (c/a)} \\
+%\hline\hline 				
+%1 & Small & 17.7 & 23.32 & 38.09 & 1.3 & 2.16\\  
+%\hline
+%2 & Medium & 39.06 & 54.32 & 59.45 & 1.4 & 1.52 \\ 
+%\hline
+%3 & Complex & 265.01 & 717.9 & 762.9 & 2.71 & 2.88\\
+%\hline
+%\end{tabular}
+%\label{table:nonlin}          % is used to refer this table in the text
+%\end{table}
+
+% Comparison (YAML Phase I Vs XML \& SOAP) - Transmission Speed (in msecs)using 64kbps link
+\begin{table}[ht]
+\caption{Comparison (YAML Phase I Vs XML \& SOAP) - Transmission Speed (in msecs)using 64kbps link}   % title of Table
+\centering                          % used for centering table
+\begin{tabular}{l r r r r r}
+\hline                        %inserts orizontal lines
+\cline{1-6}
+\textbf{Record Set} & \textbf{YAML Phase I} & \textbf{XML} & \textbf{SOAP} & \multicolumn{2}{c} {\textbf{Gain Over}} \\ [0.5ex]
+%
+& \textbf{(a)} & \textbf{(b)} & \textbf{(c)} & \textbf{XML (b/a)} & \textbf{SOAP (c/a)} \\
+\hline
+\cline{1-6} 				
+Small & 11 & 23.32 & 38.09 & 2.12 & 1.63 \\  
+Medium & 34.3 & 54.32 & 59.45 & 1.6 & 4.98 \\ 
+Complex & 144.23 & 717.9 & 762.9 & 4.98 & 5.3\\
+\hline
+\cline{1-6}
+\end{tabular}
+\label{table:nonlin}          % is used to refer this table in the text
+\end{table}
+
+% Comparison (YAML Phase I Vs XML \& SOAP) - Transmission Speed (in msecs)using 64kbps link
+%\begin{table}[ht]
+%\caption{Comparison (YAML Phase I Vs XML \& SOAP) - Transmission Speed (in msecs)using 64kbps link}   % title of Table
+%\centering                          % used for centering table
+%\begin{tabular}{|l|l||r||r|r||r|r|}
+%\hline\hline                        %inserts double horizontal lines
+%\textbf{No} & \textbf{Record Set} & \textbf{YAML Phase I} & \textbf{XML} & \textbf{SOAP} & \multicolumn{2}{c|} {\textbf{Gain Over}} \\ [0.5ex]
+%
+%\cline{6-7}
+%& & \textbf{(a)} & \textbf{(b)} & \textbf{(c)} & \textbf{XML (b/a)} & \textbf{SOAP (c/a)} \\
+%\hline\hline 				
+%1 & Small & 11 & 23.32 & 38.09 & 2.12 & 1.63 \\  
+%\hline
+%2 & Medium & 34.3 & 54.32 & 59.45 & 1.6 & 4.98 \\ 
+%\hline
+%3 & Complex & 144.23 & 717.9 & 762.9 & 4.98 & 5.3\\
+%\hline
+%\end{tabular}
+%\label{table:nonlin}          % is used to refer this table in the text
+%\end{table}
+
+
+
+% Comparison (YAML Phase II Vs XML \& SOAP) - Transmission Speed (in msecs)using 64kbps link
+\begin{table}[ht]
+\caption{Comparison (YAML Phase II Vs XML \& SOAP) - Transmission Speed (in msecs)using 64kbps link}   % title of Table
+\centering                          % used for centering table
+\begin{tabular}{l r r r r r}
+\hline                        %inserts horizontal lines
+\cline{1-7}
+\textbf{Record Set} & \textbf{YAML Phase I} & \textbf{XML} & \textbf{SOAP} & \multicolumn{2}{c} {\textbf{Gain Over}} \\ [0.5ex]
+%
+& \textbf{(a)} & \textbf{(b)} & \textbf{(c)} & \textbf{XML (b/a)} & \textbf{SOAP (c/a)} \\
+\hline
+\cline{1-7} 				
+Small & 10.71 & 23.32 & 38.09 & 2.18 & 3.56\\  
+Medium & 31.74 & 54.32 & 59.45 & 1.71 & 1.87\\ 
+Complex & 139.65 & 717.9 & 762.9 & 5.14 & 5.46\\
+\hline
+\cline{1-7}
+\end{tabular}
+\label{table:nonlin}          % is used to refer this table in the text
+\end{table}
+
+
+% Comparison (YAML Phase II Vs XML \& SOAP) - Transmission Speed (in msecs)using 64kbps link
+%\begin{table}[ht]
+%\caption{Comparison (YAML Phase II Vs XML \& SOAP) - Transmission Speed (in msecs)using 64kbps link}   % title of Table
+%\centering                          % used for centering table
+%\begin{tabular}{|l|l||r||r|r||r|r|}
+%\hline\hline                        %inserts double horizontal lines
+%\textbf{No} & \textbf{Record Set} & \textbf{YAML Phase I} & \textbf{XML} & \textbf{SOAP} & \multicolumn{2}{c|} {\textbf{Gain Over}} \\ [0.5ex]
+%
+%\cline{6-7}
+%& & \textbf{(a)} & \textbf{(b)} & \textbf{(c)} & \textbf{XML (b/a)} & \textbf{SOAP (c/a)} \\
+%\hline\hline 				
+%1 & Small & 10.71 & 23.32 & 38.09 & 2.18 & 3.56\\  
+%\hline
+%2 & Medium & 31.74 & 54.32 & 59.45 & 1.71 & 1.87\\ 
+%\hline
+%3 & Complex & 139.65 & 717.9 & 762.9 & 5.14 & 5.46\\
+%\hline
+%\end{tabular}
+%\label{table:nonlin}          % is used to refer this table in the text
+%\end{table}
+
+
+% Comparison (YAML Vs YAML Phase II) - Transmission Speed (in msecs)using 64kbps link
+\begin{table}[ht]
+\caption{Comparison (YAML  Vs YAML Phase II) - Transmission Speed (in msecs)using 64kbps link}   % title of Table
+\centering                          % used for centering table
+\begin{tabular}{l r r r}
+\hline                        %inserts horizontal lines
+\cline{1-4}
+\textbf{Record Set} & \textbf{YAML} & \textbf{YAML Phase II} & \textbf{Gain} \\ [0.5ex]
+%
+& \textbf{(a)} & \textbf{(b)} & \textbf{(a/b)} \\
+\hline
+\cline{1-4}
+Small & 17.7 & 10.71 & 1.65 \\  
+Medium & 39.06 & 31.74 & 1.23 \\ 
+Complex & 265.01 & 139.65 & 1.90 \\
+\hline
+\cline{1-4}
+\end{tabular}
+\label{table:nonlin}          % is used to refer this table in the text
+\end{table}
+
+% Comparison (YAML Vs YAML Phase II) - Transmission Speed (in msecs)using 64kbps link
+\begin{table}[ht]
+\caption{Comparison (YAML  Vs YAML Phase II) - Transmission Speed (in msecs)using 64kbps link}   % title of Table
+\centering                          % used for centering table
+\begin{tabular}{|l|l||r|r||r|}
+\hline\hline                        %inserts double horizontal lines
+\textbf{No} & \textbf{Record Set} & \textbf{YAML} & \textbf{YAML Phase II} & \textbf{Gain} \\ [0.5ex]
+%
+& & \textbf{(a)} & \textbf{(b)} & \textbf{(a/b)} \\
+\hline\hline 				
+1 & Small & 17.7 & 10.71 & 1.65 \\  
+\hline
+2 & Medium & 39.06 & 31.74 & 1.23 \\ 
+\hline
+3 & Complex & 265.01 & 139.65 & 1.90 \\
+\hline
+\end{tabular}
+\label{table:nonlin}          % is used to refer this table in the text
+\end{table}
+
+
+\twocolumn
+
+\begin{figure}
+\begin{center}
+\scalebox{0.70}
+{\includegraphics{schema.png}}
+\caption{Schema Size Analysis} \label{Fig:2}
+\end{center}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\scalebox{0.70}
+{\includegraphics{msg1.png}}
+\caption{Message Size - Growth Against YAML} \label{Fig:2}
+\end{center}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\scalebox{0.70}
+{\includegraphics{msg2.png}}
+\caption{Message Size - Growth Against YAML (Phase I)} \label{Fig:2}
+\end{center}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\scalebox{0.50}
+{\includegraphics{msg3.png}}
+\caption{Message Size - Growth Against YAML (Phase II)} \label{Fig:2}
+\end{center}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\scalebox{0.65}
+{\includegraphics{msg4.png}}
+\caption{Transmission Speed Analysis} \label{Fig:2}
+\end{center}
+\end{figure}
+
+
+\end{document}

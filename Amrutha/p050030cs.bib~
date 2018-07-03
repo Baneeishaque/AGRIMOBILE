@@ -1,0 +1,190 @@
+@conference{TLC05,
+	  author     =   {Thomas Phan and Lloyd Huang and Chris Dulan},
+	  title      =   {{Requirements and Design for XML Messaging in the Mobile Environment}},
+	  booktitle  =   {Workshop on Next Generation Networking Middleware,Helsinki Institute for Information Technology, Finland},
+	  year       =   {2005}	  
+}
+
+@article{ IKM04,
+          author     =   {Robbie De Sutter and Sam Lerouge and Peter De Neve and Christian Timmerer and Hermann Hellwagner and Rik Van de Walle},
+          title      =   {{Comparison of XML serializations: cost beneﬁts versus complexity}},
+          journal    =   {Multimedia Systems, Springer-Verlag},
+          year       =   {2006},
+          }
+
+@article{ J05,
+	  author     =   {Jaakko Kangasharju},
+	  title      =   {{Mobile XML Messaging}},
+	  year       =   {2005},	  
+          publisher =    {Department of Computer Science. University of Helsinki}, 
+	  note       =   {Available at www.cs.helsinki.fi/u/jkangash/xml-mess.pdf},
+
+          }
+
+
+@article{C04,
+         author = {Conan C. Albrecht},
+         title = {{How clean is the future of SOAP?}},
+         journal = {Communications of ACM},
+         volume = {47},
+         number = {2},
+         year = {2004},
+         issn = {0001-0782},
+         pages = {66--68},
+         doi = {http://doi.acm.org/10.1145/966389.966392},
+         publisher = {ACM Press} 
+ }
+
+
+@conference{ LH03,
+	  author     =   {Laukkanen and Helin},
+	  title      =   {Web services in wireless networks — what happened to the performance?},
+	  booktitle    =   {L.-J. Zhang, editor, International Conference on Web Services},
+	  year       =   {2003},
+	  pages      =   {278--284}	  
+	   }
+
+@article{ R04,
+          author     =   {Ronald Schmelzer},
+          title      =   {{Will binary XML solve XML performance woes?}},
+          year       =   {2004},
+          month      =   {November},
+          note       =   {Available at http://searchwebservices.techtarget.com/tip/
+1,289483,sid,26\_gci1027726,00.html}
+          }
+
+@article{ PSKMER03,
+          author     =   {Paul Sandoz and Santiago Pericas-Geertsen and Kohuske Kawaguchi and Marc Hadley and Eduardo Pelegri-Llopart},
+          title      =   {{Fast Web Services}},
+          year       =   {2003},
+          month      =   {August},
+          note       =   {Available at http://java.sun.com/developer/technicalArticles
+/WebServices/fastWS/index.html}
+          }
+
+@conference{ PS05,
+          author     =   {Paul Sandoz and Santiago Pericas-Geertsen},
+          title      =   {{Fast Infoset @ Java.net}},
+          booktitle  =   {XTech 2005: XML, the Web and beyond}
+          year       =   {2005},
+          note       =   {Available at http://idealliance.org/proceedings/xtech05/papers/04-01-01/}
+          }
+
+@article{ PSAS04,
+          author     =   {Paul Sandoz and Alessando Triglia and Santiago Pericas-Geertsen},
+          title      =   {{Fast Infoset}},
+          year       =   {2004},
+          month      =   {June},
+          note       =   {Avaialable at http://java.sun.com/developer/technicalArticles
+                          /xml/fastinfoset/}
+          }
+
+@article{ X06,
+          title      =   {{Xebu Serialization Format}},
+          note       =   {Available at https://hoslab.cs.helsinki.fi/homepages/xebu/}
+          }
+
+@article{ F06,
+          title      =   {{The ServerIronGT E-series Web Appliance}},
+          note       =   {Available at http://www.foundrynet.com}
+          }
+
+@article{ DA03,
+          author     =   {Devaram and Andresen},
+          title      =   {{SOAP Optimization via parameterized client-side caching}},
+          year       =   {2003},
+          publisher =    {Department of Computing and Information Sciences, , Kansas State University}, 
+          note       =   {Available at http://java.sun.com/developer/technicalArticles/
+                          xml/fastinfoset/}
+          }
+
+@article{ A03,
+          author     =   {Aleksander Slominski},
+          title      =   {{Home page of XML Pull Parser (XPP)}},
+          year       =   {2003},
+          note       =   {Available at http://www.extreme.indiana.edu/xgws/xsoap/xpp/}
+          }
+
+@inproceedings{PGK01, 
+   author = {Patrick Widener and Greg Eisenhauer and Karsten Schwan},
+   title = {{Open Metadata Formats: Efficient XML-Based Communication for High Performance Computing}},
+   booktitle = {Proceedings of the 10th IEEE International Symposium on High Performance Distributed Computing (HPDC-10'01)},
+   pages = {371--382},
+   month = {August},
+   year = {2001},
+   note = {Available at citeseer.ist.psu.edu/article/widener01open.html},
+   publisher = {IEEE Computer Society Press}
+
+} 
+
+@article{ Y06,
+          title      =   {{WELCOME TO YAML.ORG}},
+          note       =   {Available at http://yaml.org/}
+          }
+
+@article{ K06,
+          title      =   {Kwalify},
+          note       =   {Available at http://www.kuwata-lab.com/kwalify/}
+          }
+
+@article{ T06,
+          title      =   {{Adjusting IP MTU, TCP MSS, and PMTUD on Windows and Sun Systems}},
+          month      =   {February},
+          year       =   {2006},
+          note       =   {Available at http://www.cisco.com/warp/public/105/38.shtml}
+
+          }
+
+@inproceedings{GS00, 
+   author = {Girardot and Sundaresan},
+   title = {Millau: an encoding format for efﬁcient representation and exchange of xml over the web},
+   booktitle = {In Proceedings of the 9th international World Wide Web conference on Computer networks},
+   journal = {The international journal of computer and telecommunications netowrking},
+   pages = {747–765},
+   year = {2000},
+   note = {Available at citeseer.ist.psu.edu/article/widener01open.html},
+   publisher = {North-Holland Publishing Co}
+
+} 
+
+@inproceedings{CGGSS02, 
+   author = {Cai and Ghandeharizadeh and Girardot and Schmidt and Song},
+   title = {{A Comparison of Alternative Encoding Mechanisms for Web Services}},
+   booktitle = {13th International Conference on Database and Expert Systems Applications,Aix en Provence, France},
+   year = {2002},
+   month = {September}
+} 
+
+@article{ X07,
+          title      =   {{Extensible Markup Language (XML)}},
+          note       =   {Available at http://www.w3.org/XML/}
+        }
+
+@article{ SP07,
+          title      =   {{SOAP Tutorial}},
+          note       =   {Available at http://www.w3schools.com/soap/default.asp}
+        }
+
+@article{ YA07,
+          title      =   {{YAML Ain\'t Markup Language (YAML) Version 1.1}},
+          note       =   {Available at http://yaml.org/spec/current.html}
+        }
+
+@article{ AS07,
+          title      =   {{ASN.1 Information Site}},
+          note       =   {Available at http://asn1.elibel.tm.fr/}
+        }
+
+@article{ E07,
+          title      =   {{XML Encryption Syntax and Processing}},
+          note       =   {Available at http://www.w3.org/TR/xmlenc-core/}
+        }
+
+
+@article{ M05,
+          author     =   {Mark O’Rielly},
+          title      =   {{USA messaging market set for rapid growth, says Analysys}},
+          note       =   {Available at http://www.analysys.com/}
+        }
+
+

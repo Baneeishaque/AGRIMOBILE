@@ -1,0 +1,678 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.28)  26 OCT 2016 21:01
+entering extended mode
+**minipc.tex
+(C:\Minitex\Amrutha\minipc.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
+(C:\Minitex\Amrutha\seminar.cls
+
+LaTeX Warning: You have requested document class `seminar',
+               but the document class provides `thesis'.
+
+Document Class: thesis 2000/11/03
+
+--------------------------------------------------------------
+ +---+ Thesis Style (thesis.cls) version 1.09, November 2000
+ +---+ for University of Colorado Ph.D. theses/dissertations.
+ * Conforms to the University of Colorado at Boulder Graduate
+ * School "SPECIFICATIONS for Preparation of Bachelor's Thesis
+ * and Doctoral Dissertations" (rev. February 2000).
+--------------------------------------------------------------
+ URL: http://www.Colorado.EDU/ITS/docs/latex/ThesisClass
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\report.cls"
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size12.clo"
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\indentfirst.sty"
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(C:\Minitex\Amrutha\ulem.sty
+\UL@box=\box26
+\UL@hyphenbox=\box27
+\UL@skip=\skip43
+\UL@hook=\toks14
+\UL@height=\dimen103
+\UL@pe=\count88
+\UL@pixel=\dimen104
+\ULC@box=\box28
+Package: ulem 2011/03/18
+\ULdepth=\dimen105
+)
+\c@th@SecNum=\count89
+\c@th@SectionSave=\count90
+\th@SubSubSecSpc=\skip44
+\c@th@storepage=\count91
+
+
+! LaTeX Error: Command \deg already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1310 ...mand*{\deg}[1]{\th@StoreIn{\th@deg}{#1}}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count92
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+\Gin@req@height=\dimen106
+\Gin@req@width=\dimen107
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\latexsym.sty"
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\epsfig.sty"
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+\epsfxsize=\dimen108
+\epsfysize=\dimen109
+)
+(C:\Minitex\Amrutha\rotating.sty
+Package: rotating 1995/08/22 2.10 Rotation package
+\r@tfl@t=\count93
+\rot@float@box=\box29
+) (C:\Minitex\Amrutha\eufrak.sty
+Package: eufrak 1997/05/15 v2.2d Euler Fraktur fonts
+LaTeX Font Info:    Overwriting math alphabet `\EuFrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 52.
+)
+! Too many }'s.
+l.91 }
+      
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+Putting page number on short ToC
+Putting page number on short LoF
+(C:\Minitex\Amrutha\minipc.aux
+
+LaTeX Warning: Label `msdn' multiply defined.
+
+)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count94
+\scratchdimen=\dimen110
+\scratchbox=\box30
+\nofMPsegments=\count95
+\nofMParguments=\count96
+\everyMPshowfont=\toks16
+\MPscratchCnt=\count97
+\MPscratchDim=\dimen111
+\MPnumerator=\count98
+\makeMPintoPDFobject=\count99
+\everyMPtoPDFconversion=\toks17
+)
+Making Title Page
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <17.28> on input line 135.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 135.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 135.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ulasy.fd"
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Info:    Try loading font information for U+euf on input line 135.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\ueuf.fd"
+File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
+)
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.135 \begin{document}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \vskip 
+l.135 \begin{document}
+                      
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \vskip 
+l.135 \begin{document}
+                      
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+<figures/meslogo.png, id=1, 138.5175pt x 163.61125pt>
+File: figures/meslogo.png Graphic file (type png)
+
+<use figures/meslogo.png>
+Package pdftex.def Info: figures/meslogo.png used on input line 135.
+(pdftex.def)             Requested size: 87.26648pt x 103.07562pt.
+
+! Undefined control sequence.
+<argument> \@thesistitlebigskip 
+                                
+l.135 \begin{document}
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \ignorespaces 
+l.135 \begin{document}
+                      
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \ignorespaces 
+l.135 \begin{document}
+                      
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+Making Approval Page
+[1
+
+
+{C:/Users/TOHIBA/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Minitex
+/Amrutha/figures/meslogo.png>]
+Overfull \hbox (7.62512pt too wide) in paragraph at lines 135--135
+ [] 
+ []
+
+Making Abstract Page
+
+Overfull \hbox (67.14171pt too wide) in paragraph at lines 135--135
+[] []
+ []
+
+[2
+
+]
+centered
+Missing character: There is no ‘ in font cmr12!
+Missing character: There is no ’ in font cmr12!
+Making Dedication Page
+Making Acknowledgement Page
+
+Overfull \vbox (7.96431pt too high) has occurred while \output is active []
+
+
+[3
+
+
+]
+centered
+Making Abstract Page
+Making ToC Page
+Making Short ToC...
+
+Overfull \vbox (7.96431pt too high) has occurred while \output is active []
+
+
+[4
+
+
+]
+centered
+Short Chapter (page numbered)
+(C:\Minitex\Amrutha\minipc.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 3.
+
+Overfull \vbox (5.16667pt too high) has occurred while \output is active []
+
+
+[5
+
+])
+\tf@toc=\write3
+
+Making LoT Page
+! Undefined control sequence.
+\th@MakeThesisPrologue ...g LoT Page} \th@LoTpage 
+                                                  \typeout {Making LoF Page}...
+l.135 \begin{document}
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Making LoF Page
+Making Short LoF...
+
+Overfull \vbox (7.96431pt too high) has occurred while \output is active []
+
+
+[6]
+centered
+Short Chapter (page numbered)
+(C:\Minitex\Amrutha\minipc.lof)
+\tf@lof=\write4
+
+
+
+-------------------Beginning Body----------------------
+
+
+
+Overfull \vbox (7.96431pt too high) has occurred while \output is active []
+
+
+[7
+
+] (C:\Minitex\Amrutha\macros.tex
+\c@th@theorem=\count100
+) (C:\Minitex\Amrutha\miniintro.tex
+ \th@ChapterStyle\th@DoChapCenterChapter \th@ChapterStyle 1.
+centered
+Missing character: There is no ‘ in font cmr12!
+Missing character: There is no ’ in font cmr12!
+Missing character: There is no ‘ in font cmr12!
+Missing character: There is no ’ in font cmr12!
+Missing character: There is no ’ in font cmr12!
+[1
+
+
+]
+Missing character: There is no ‘ in font cmr12!
+Missing character: There is no ’ in font cmr12!
+) (C:\Minitex\Amrutha\minisystem.tex
+Overfull \vbox (7.73332pt too high) has occurred while \output is active []
+
+
+[2]
+ \th@ChapterStyle\th@DoChapCenterChapter \th@ChapterStyle 2.
+centered
+Missing character: There is no ’ in font cmr12!
+! Misplaced alignment tab character &.
+l.15 ...access the desktop of the remote machine &
+                                                   the user will never get t...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.15 ...mote system, send messages to the server &
+                                                   use the processor of the ...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+[3
+
+]
+Missing character: There is no ’ in font cmr12!
+
+! Misplaced alignment tab character &.
+l.24 ... will register by providing his username &
+                                                   password through android ...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 29.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 29.
+
+! Misplaced alignment tab character &.
+l.34 ...Cs power functions like Shut down, Sleep &
+                                                   Hibernate.
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+) (C:\Minitex\Amrutha\minidesign.tex
+Overfull \vbox (7.73332pt too high) has occurred while \output is active []
+
+
+[4]
+ \th@ChapterStyle\th@DoChapCenterChapter \th@ChapterStyle 3.
+centered
+<login1.png, id=44, 450.9347pt x 131.74219pt>
+File: login1.png Graphic file (type png)
+ <use login1.png>
+Package pdftex.def Info: login1.png used on input line 17.
+(pdftex.def)             Requested size: 450.9336pt x 131.74185pt.
+
+<login2.png, id=46, 442.65375pt x 131.74219pt>
+File: login2.png Graphic file (type png)
+ <use login2.png>
+Package pdftex.def Info: login2.png used on input line 29.
+(pdftex.def)             Requested size: 442.65265pt x 131.74185pt.
+
+<f3.png, id=47, 420.06938pt x 111.41624pt>
+File: f3.png Graphic file (type png)
+ <use f3.png>
+Package pdftex.def Info: f3.png used on input line 41.
+(pdftex.def)             Requested size: 420.06836pt x 111.41597pt.
+
+<power1.png, id=48, 441.90094pt x 155.07938pt>
+File: power1.png Graphic file (type png)
+ <use power1.png>
+Package pdftex.def Info: power1.png used on input line 53.
+(pdftex.def)             Requested size: 441.89986pt x 155.07898pt.
+
+<send1.png, id=49, 438.13687pt x 289.08pt>
+File: send1.png Graphic file (type png)
+ <use send1.png>
+Package pdftex.def Info: send1.png used on input line 65.
+(pdftex.def)             Requested size: 438.13579pt x 289.07928pt.
+)
+(C:\Minitex\Amrutha\minireq.tex [5
+
+]
+Overfull \vbox (7.73332pt too high) has occurred while \output is active []
+
+
+[6 <C:/Minitex/Amrutha/login1.png> <C:/Minitex/Amrutha/login2.png> <C:/Minitex/
+Amrutha/f3.png>]
+Overfull \vbox (7.73332pt too high) has occurred while \output is active []
+
+
+[7 <C:/Minitex/Amrutha/power1.png> <C:/Minitex/Amrutha/send1.png>]
+ \th@ChapterStyle\th@DoChapCenterChapter \th@ChapterStyle 4.
+centered
+[8
+
+]
+! You can't use `macro parameter character #' in horizontal mode.
+l.20 ...bile applications. Visual Basic, Visual C#
+                                                  , and Visual C++ all use t...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+) (C:\Minitex\Amrutha\miniimpl.tex
+Overfull \vbox (7.73332pt too high) has occurred while \output is active []
+
+
+[9]
+ \th@ChapterStyle\th@DoChapCenterChapter \th@ChapterStyle 5.
+centered
+[10
+
+] <launch.png, id=74, 770.88pt x 1284.8pt>
+File: launch.png Graphic file (type png)
+ <use launch.png>
+Package pdftex.def Info: launch.png used on input line 21.
+(pdftex.def)             Requested size: 770.87813pt x 1284.79688pt.
+
+<terms.png, id=75, 770.88pt x 1284.8pt>
+File: terms.png Graphic file (type png)
+ <use terms.png>
+Package pdftex.def Info: terms.png used on input line 32.
+(pdftex.def)             Requested size: 770.87813pt x 1284.79688pt.
+)
+(C:\Minitex\Amrutha\minicon.tex
+Overfull \vbox (7.73332pt too high) has occurred while \output is active []
+
+
+[11]
+Overfull \vbox (7.73332pt too high) has occurred while \output is active []
+
+
+[12 <C:/Minitex/Amrutha/launch.png>]
+Overfull \vbox (7.73332pt too high) has occurred while \output is active []
+
+
+[13 <C:/Minitex/Amrutha/terms.png>]
+ \th@ChapterStyle\th@DoChapCenterChapter \th@ChapterStyle 6.
+centered
+Missing character: There is no ’ in font cmr12!
+[14
+
+])
+ \th@ChapterStyle\th@DoChapCenterAppendix \th@ChapterStyle A.
+centered
+<reg.png, id=89, 770.88pt x 1284.8pt>
+File: reg.png Graphic file (type png)
+ <use reg.png>
+Package pdftex.def Info: reg.png used on input line 157.
+(pdftex.def)             Requested size: 770.87813pt x 1284.79688pt.
+ [15]
+Overfull \vbox (7.73332pt too high) has occurred while \output is active []
+
+
+[16
+
+ <C:/Minitex/Amrutha/reg.png>] <login.png, id=96, 770.88pt x 1284.8pt>
+File: login.png Graphic file (type png)
+
+<use login.png>
+Package pdftex.def Info: login.png used on input line 167.
+(pdftex.def)             Requested size: 770.87813pt x 1284.79688pt.
+ <window.png, id=97, 770.88pt x 1284.8pt>
+File: window.png Graphic file (type png)
+ <use window.png>
+Package pdftex.def Info: window.png used on input line 177.
+(pdftex.def)             Requested size: 770.87813pt x 1284.79688pt.
+
+<system.png, id=98, 770.88pt x 1284.8pt>
+File: system.png Graphic file (type png)
+ <use system.png>
+Package pdftex.def Info: system.png used on input line 187.
+(pdftex.def)             Requested size: 770.87813pt x 1284.79688pt.
+
+<home.png, id=99, 770.88pt x 1284.8pt>
+File: home.png Graphic file (type png)
+ <use home.png>
+Package pdftex.def Info: home.png used on input line 197.
+(pdftex.def)             Requested size: 770.87813pt x 1284.79688pt.
+
+<desk.png, id=100, 1284.8pt x 770.88pt>
+File: desk.png Graphic file (type png)
+ <use desk.png>
+Package pdftex.def Info: desk.png used on input line 207.
+(pdftex.def)             Requested size: 1284.79688pt x 770.87813pt.
+
+<message.png, id=101, 770.88pt x 1284.8pt>
+File: message.png Graphic file (type png)
+ <use message.png>
+Package pdftex.def Info: message.png used on input line 217.
+(pdftex.def)             Requested size: 770.87813pt x 1284.79688pt.
+
+<power.png, id=102, 770.88pt x 1284.8pt>
+File: power.png Graphic file (type png)
+ <use power.png>
+Package pdftex.def Info: power.png used on input line 227.
+(pdftex.def)             Requested size: 770.87813pt x 1284.79688pt.
+
+<notify.png, id=103, 1028.34187pt x 578.16pt>
+File: notify.png Graphic file (type png)
+ <use notify.png>
+Package pdftex.def Info: notify.png used on input line 237.
+(pdftex.def)             Requested size: 1028.33937pt x 578.15858pt.
+
+No file minipc.bbl.
+
+Overfull \vbox (7.73332pt too high) has occurred while \output is active []
+
+
+[17 <C:/Minitex/Amrutha/login.png>]
+Overfull \vbox (7.73332pt too high) has occurred while \output is active []
+
+
+[18 <C:/Minitex/Amrutha/window.png>]
+Overfull \vbox (7.73332pt too high) has occurred while \output is active []
+
+
+[19 <C:/Minitex/Amrutha/system.png>]
+Overfull \vbox (7.73332pt too high) has occurred while \output is active []
+
+
+[20 <C:/Minitex/Amrutha/home.png> <C:/Minitex/Amrutha/desk.png>]
+Overfull \vbox (7.73332pt too high) has occurred while \output is active []
+
+
+[21 <C:/Minitex/Amrutha/message.png>]
+Overfull \vbox (7.73332pt too high) has occurred while \output is active []
+
+
+[22 <C:/Minitex/Amrutha/power.png>]
+Overfull \vbox (7.73332pt too high) has occurred while \output is active []
+
+
+[23 <C:/Minitex/Amrutha/notify.png>]
+centered
+
+! LaTeX Error: \begin{itemize} on input line 4 ended by \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.297 \end{document}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[24
+
+] (C:\Minitex\Amrutha\minipc.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ )
+(\end occurred inside a group at level 1)
+
+### semi simple group (level 1) entered at line 4 (\begingroup)
+### bottom level 
+Here is how much of TeX's memory you used:
+ 1878 strings out of 493921
+ 25370 string characters out of 3144873
+ 81776 words of memory out of 3000000
+ 5125 multiletter control sequences out of 15000+200000
+ 13197 words of font info for 49 fonts, out of 3000000 for 9000
+ 841 hyphenation exceptions out of 8191
+ 27i,6n,28p,1153b,421s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mbxti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
+10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12
+.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eufm1
+0.pfb>
+Output written on minipc.pdf (31 pages, 1061475 bytes).
+PDF statistics:
+ 154 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,0 +1,37 @@
+\chapter{\label{res1}Results}
+In this chapter, the screen shots of the results achieved in different stages had been displayed. The sample input page is displayed in Figure 6, document being loaded to GATE is displayed in Figure 7, document with annotations is shown in Figure 8, processing of structures is displayed in Figure 9, RDF output is displayed in Figure 10 and the Validated graph of the RDF output is displayed in Figure 11.
+
+\begin{figure}
+%\includegraphics[0,60][100,50]{news1a.jpg}
+\includegraphics{news1a.jpg}
+\caption{Input Document} \label{Fig:4}
+\end{figure}
+
+\begin{figure}
+\scalebox{0.45}
+{\includegraphics{news2.png}}
+\caption{Document Loaded to GATE} \label{Fig:1}
+\end{figure}
+
+\begin{figure}
+\scalebox{0.45}
+{\includegraphics[0,0]{news3.png}}
+\caption{Annotated Document} \label{Fig:4}
+\end{figure}
+
+\begin{figure}
+\includegraphics[0,0]{out1a.jpg}
+\caption{Processing Structres} \label{Fig:4}
+\end{figure}
+
+\begin{figure}
+\scalebox{0.75}
+{\includegraphics[0,0]{out2a.jpg}}
+\caption{RDF Output} \label{Fig:4}
+\end{figure}
+
+\begin{figure}
+\scalebox{0.75}
+{\includegraphics{out4a.jpg}}
+\caption{Validated Graph of RDF Output} \label{Fig:4}
+\end{figure}

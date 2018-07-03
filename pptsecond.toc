@@ -1,0 +1,7 @@
+\beamer@endinputifotherversion {3.10pt}
+\select@language {english}
+\beamer@subsectionintoc {0}{1}{Introduction}{2}{0}{0}
+\beamer@subsectionintoc {0}{2}{Literature survey}{6}{0}{0}
+\beamer@subsectionintoc {0}{3}{Problem Definition}{23}{0}{0}
+\beamer@subsectionintoc {0}{4}{Conclusion}{25}{0}{0}
+\beamer@subsectionintoc {0}{5}{References}{27}{0}{0}

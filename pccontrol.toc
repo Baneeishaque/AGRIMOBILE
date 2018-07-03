@@ -1,0 +1,13 @@
+\beamer@endinputifotherversion {3.36pt}
+\select@language {english}
+\beamer@subsectionintoc {0}{1}{Objective}{2}{0}{0}
+\beamer@subsectionintoc {0}{2}{Introduction}{4}{0}{0}
+\beamer@subsectionintoc {0}{3}{Literature survey}{8}{0}{0}
+\beamer@subsectionintoc {0}{4}{Wireless Sensor Network Denial of Sleep attack[1]}{10}{0}{0}
+\beamer@subsectionintoc {0}{5}{Intrusion Tolerant routing in Wireless Sensor Network[2] }{14}{0}{0}
+\beamer@subsectionintoc {0}{6}{Cross-Layer Design for Energy Conservation in Wireless Sensor Network[3]}{18}{0}{0}
+\beamer@subsectionintoc {0}{7}{Energy Efficient Opportunistic Routing in Wireless Sensor Network[4]}{21}{0}{0}
+\beamer@subsectionintoc {0}{8}{Sleep Deprivation Attack Detection in Wireless Sensor Network[5]}{24}{0}{0}
+\beamer@subsectionintoc {0}{9}{Vampire Attack: Draining Life from Wireless Sensor Network[6]}{28}{0}{0}
+\beamer@subsectionintoc {0}{10}{Conclusion}{33}{0}{0}
+\beamer@subsectionintoc {0}{11}{References}{35}{0}{0}

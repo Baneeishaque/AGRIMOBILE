@@ -1,0 +1,975 @@
+@article{ K06,
+          title      =   {Kwalify},
+          note       =   {{Available} at http://www.kuwata-lab.com/kwalify/}
+}
+
+@article{ RX08,
+          title      =   {{Rx: Simple, Extensible Schemata}},
+          note    =   {{Available} at http://rjbs.manxome.org/rx/index.html}
+}
+
+@article{ XS08,
+          title      =   {{W3C XML Schema}},
+          note    =   {{Available} at http://www.w3.org/XML/Schema}
+}
+
+
+
+@article{ WX08,
+         author = {Takeshi Imamura and Blair Dillaway and Ed Simon},
+         title      =   {W3C XML Encryption Syntax and Processing},         
+         month = {December},
+          year = {2002},
+          note    =   {{W3C Recommendation Available} at http://www.w3.org/TR/xmlenc-core/}
+}
+
+
+@article{ W07,
+	  author     =   {Bruce Martin and Bashar Jano},
+	  title      =   {{WAP} Binary {XML} Content Format},
+          month = {June},
+ 	  year       =   {1999},
+          note       = {{W3C} Note, {Available} at  http://www.w3.org/TR/wbxml/}
+}
+
+@article{ OCI10,
+          author  =   {Oren Ben-Kiki and Clark Evans and Ingy döt Net},
+          title       =   {{YAML} Ain\'t Markup Language ({YAML}) Version 1.2, 3rd Edition},
+          month  =  {January},
+          year = {2010},
+          note     =   {{Available} at http://www.yaml.org/spec/1.2/spec.html}
+}
+
+@article{ YXPYY06,
+	  author     =   {Yiliang Han and Xiaoyuan Yang and Ping Wei and Yuming Wang and Yupu Hu},
+	  title      =   {{ECGSC}: Elliptic Curve Based Generalized Signcryption},
+          journal    =   {Lecture Notes in Computer Science},
+ 	  year       =   {2006},
+          volume = {4159},
+          pages = {956 -- 965},
+          publisher = {Springer-Verlag Berlin Heidelberg}, 	
+}
+
+@article{GMPMH05,
+ author = {Giovanni Della-Libera and Martin Gudgin and Phillip Hallam-Baker and Maryann Hondo and Hans Granqvist and Chris Kaler and Hiroshi Maruyama and Michael McIntosh and Anthony Nadalin and Nataraj Nagaratnam and Rob Philpott and Hemma Prafullchandra and John Shewchuk and Doug Walter and Riaz Zolfonoon},
+ title = {Web Services Security Policy Language (WS-SecurityPolicy)},
+ month = {July},
+ year = {2005},
+ note = {{Available} at http://specs.xmlsoap.org/ws/2005/07/securitypolicy/ws-securitypolicy.pdf}
+}
+
+
+@article{DMCHANPCJ03,
+ author = {Don Box and Maryann Hondo and Chris Kaler and Hiroshi Maruyama and Anthony Nadalin and Nataraj Nagaratnam and Paul Patrick and Claus von Riegen and John Shewchuk},
+ title = {Web Services Policy Assertions Language (WS-PolicyAssertions)},
+ month = {May},
+ year = {2003},
+ note = {{Available} at http://xml.coverpages.org/ws-policyassertionsV11.pdf},
+}
+
+
+@article{ BS02,
+          author     =   {Bilal Siddiqui},
+          title      =   {{XML} Canonicalization},
+          month  =  {September},
+          year = {2002},   
+          note       =   {{Available} at http://webservices.xml.com/pub/a/ws/2002/09/18/c14n.html}
+}
+
+
+@article{ AV06,
+          author  =   {Tim Bray and Jean Paoli and Sperberg-McQueen and Eve Maler and François Yergeau},
+          title      =   {Attribute-Value Normalization},
+          month  =  {November},
+          year = {2008},          
+          note       =  {{W3C Recommendation. Available} at  http://www.w3.org/TR/REC-xml/#AVNormalize}
+}
+
+@article{ UT06,
+          title      =   {{UTF-8, UTF-16, UTF-32 \& BOM}},
+          month  =  {August},
+          year = {2010},
+          note       =   {{Available} at http://unicode.org/faq/utf\_bom.html#22},
+}
+
+@article{ OCI05,
+          author  =   {Oren Ben-Kiki, Clark Evans and Ingy döt Net},
+          title       =   {Language-Independent Types for {YAML™} Version 1.1},
+          month  = {January},
+          year  =  {2005},
+          note     =   {{Available} at http://yaml.org/type/}
+}
+
+@article{IP06,
+ title = {Adjusting IP MTU, TCP MSS, and PMTUD on Windows and Sun Systems},
+ month = {August},
+ year = {2005},
+ note = {{Available} at http://www.cisco.com, {CISCO} Technical Note, Document ID: 13709}
+ }
+
+@article{GJDS07,
+ author = {Greg White and Jaakko Kangasharju and Don Brutzman and Stephen Williams},
+ title = {Efficient {XML} Interchange Measurements Note},
+ year = {2007},
+ month = {July},
+ note = {{Available} at http://www.w3.org/TR/exi-measurements/}
+ }
+
+@article{OFDM08,
+    title = {Orthogonal frequency-division multiplexing},
+    year = {2008},
+    month = {March},
+    note = {{Available} at http://en.wikipedia.org/wiki/OFDM}
+}
+
+@MISC{SP00,
+  author = { Sravanthi Lanka and Pareena Parikh },
+  title = { {XML} Shredding },
+  month = {November},
+  year = {2000},
+  address = { Midterm Project, New York University, Courant } 
+}
+
+@MISC{WC03,
+  author = { Wendy Chou },
+  title = { Elliptic Curve Cryptography and Its Applications to Mobile Devices },
+  year = {2003},
+  address = { Tech. Rep., University of Maryland, College Park, Maryland } 
+}
+
+@INPROCEEDINGS{NSAN03,
+author={Potlapally, N.R. and Ravi, S. and Raghunathan, A. and Jha, N.K.},
+booktitle={ISLPED '03: Proceedings of the 2003 International Symposium on Low Power Electronics and Design}, 
+title={Analyzing the energy consumption of security protocols},
+year={2003},
+month=aug.,
+volume={},
+number={},
+pages={ 30 - 35},
+keywords={ Linux; OpenSSL; PC-based data acquisition system; SSL transport-layer security protocol; Secure Sockets Layer; authentication mechanisms; battery life constraint; battery powered embedded systems; cipher modes; cipher strength; cipher suites; cryptographic algorithm level parameters; cryptographic algorithms; energy consumption; energy efficient security; energy requirements; iPAQ PDA; measurement-based testbed; parametrizable SSL client/server test programs; protocol level parameters; real-time current measurement; secure data transactions; security mechanisms; security protocols; transaction sizes; wired Internet; wireless LAN; wireless data applications; cells (electric); cryptography; data acquisition; data communication; mobile computing; notebook computers; operating systems (computers); power supplies to apparatus; protocols; real-time systems; telecommunication security; wireless LAN;},
+doi={10.1109/LP}
+}
+
+
+@article{YZ97,
+    author = {Yuliang Zheng},
+    title = {Digital Signcryption or How to Achieve Cost (Signature {\&} Encryption) {$<<$} Cost(Signature) $+$ Cost(Encryption)},
+    journal = {Lecture Notes in Computer Science},
+    volume = {1294},
+    pages = {165--179},
+    year = {1997},
+    note = { {Available} at citeseer.ist.psu.edu/zheng97digital.html}
+}
+
+@inproceedings{Z97,
+    author = {Yuliang Zheng},
+    title = {Signcryption and Its Applications in Efficient Public Key Solutions},
+    booktitle = {ISW 97: Proceedings of 1st International Information Security Workshop},
+    pages = {291--312},
+    month = {September},
+    year = {1997},
+    location = {Tatsunokuchi, Japan},
+    note = {{Available} at citeseer.ist.psu.edu/zheng97signcryption.html}
+}
+
+
+@INPROCEEDINGS{FN01,
+author={L M Feeney and M Nilsson},
+booktitle={INFOCOM 2001. Twentieth Annual Joint Conference of the IEEE Computer and Communications Societies. Proceedings. IEEE}, title={Investigating the energy consumption of a wireless network interface in an ad hoc networking environment},
+year={2001},
+month = {April},
+volume={3},
+number={},
+pages={1548 -1557 vol.3},
+keywords={IEEE 802.11 wireless network interface;MAC protocol;ad hoc networking environment;broadcast data packets;energy consumption;energy-aware design;energy-aware evaluation;linear equations;mobile wireless hosts;network protocols;packet discarding;packet reception;packet size;packet transmission;point-to-point data packets;protocol design;protocol evaluation;wireless network interface;IEEE standards;access protocols;data communication;land mobile radio;network interfaces;packet radio networks;power consumption;telecommunication standards;},
+doi={10.1109/INFCOM.2001.916651},
+ISSN={}
+}
+
+@article{ GPDN06,
+	  author     =   {Géraud Allard and Pascale Minet and Dang-Quan Nguyen and Nirisha Shrestha},
+	  title      =   {Evaluation of the Energy Consumption in {MANET}},
+          journal    =   {Lecture Notes in Computer Science},
+          pages = {170--183},
+ 	  year       =   {2006},
+          volume = {4104/2006},
+          publisher =    {{Springer Berlin / Heidelberg}}, 	
+}
+
+@inproceedings{PS05,
+ author = {Paul Sandoz and Santiago Pericas-Geertsen},
+ title = {Fast Infoset @ Java.net},
+ booktitle = {XTech 2005: Proceedings of the  XTech 2005},
+ year = {2005},
+ month = {May},
+ pages = {},
+ location = {Amsterdam, Netherands}
+}
+
+@techreport{CR00,
+    author = {Certicom-Research},
+    title = {STANDARDS FOR EFFICIENT CRYPTOGRAPHY, SEC 1: Elliptic Curve Cryptography},
+    year = {2000},    
+    institution = {Certicom Research}
+}
+
+@techreport{ JM09,
+	  author     =   {Johnson and Menezes},
+	  title      =   {The Elliptic Curve Digital Signature Algorithm ({ECDSA})},
+	  year       =   {1999},	  
+          month  = {August},
+          institution =  {Technical report CORR 99-34, Department of C\&O, University of Waterloo, 1999}
+}
+
+@article{ IC07,
+          author = {John Boyer}, 
+          title      =   {Canonical {XML}, {V}ersion 1.0},
+          year = {2001},
+          month = {March},
+          note       =   {{W3C} Recommendation, {Available} at http://www.w3.org/TR/xml-c14n}
+}
+
+@INPROCEEDINGS{X06,
+    author = {Jaakko Kangasharju and Sasu Tarkoma and Tancred Lindholm},
+    title = {Xebu: A binary format with schema-based optimizations for {XML} data},
+    booktitle = {WISE 2005: Proceedings of the 6th International Conference on Web Information Systems Engineering},
+    month = {November},  
+    year = {2005},
+    pages = {528--535},
+    location = {New York, NY, USA},
+    publisher = {Springer-Verlag, LNCS 3806}
+}
+   
+@article{ S07,
+          author        =   {Mark Bartel and  John Boyer and Barb Fox and  Brian LaMacchia and Ed Simon},
+          title      =   {{XML} Signature Syntax and Processing (Second Edition)},
+          year       =   {2008},
+          month      =   {June},
+          note       =   {{W3C} Recommendation, {Available} at http://www.w3.org/TR/xmldsig-core/}
+}
+
+
+@inproceedings{AFS08,
+ author = {Azzedine Benameur and Faisal Abdul Kadir and Serge Fenet},
+ title = {{XML} Rewriting Attacks: Existing Solutions and their Limitations},
+ booktitle = {IADIS 2008: International Conference on Applied Computing},
+ journal   = {CoRR},
+ year      = {2008},
+ location = {Algarve, Portugal},
+ ee        = {http://arxiv.org/abs/0812.4181},
+ publisher = {IADIS Press},
+ note     =  {{Available} at http://arxiv.org/abs/0812.4181}
+}
+
+@inproceedings{SA08,
+ author = {Smriti Kumar Sinha and Azzedine Benameur},
+ title = {A formal solution to rewriting attacks on {SOAP} messages},
+ booktitle = {SWS '08: Proceedings of the 2008 ACM workshop on Secure web services},
+ year = {2008},
+ isbn = {978-1-60558-292-4},
+ pages = {53--60},
+ location = {Alexandria, Virginia, USA},
+ doi = {http://doi.acm.org/10.1145/1456492.1456501},
+ publisher = {ACM},
+ address = {New York, NY, USA}
+}
+
+
+@inproceedings{MMA06,
+ author = {Mohammad Ashiqur Rahaman and Maarten Rits and Andreas Schaad},
+ title = {An Inline Approach for Secure {SOAP} Requests and Early Validation},
+ booktitle = {OWASP '06: Proceedings of the OWASP Europe 2006 Conference},
+ year = {2006},
+ month = {May},
+ pages = {19--33},
+ location = {Leuven, Belgium}
+ }
+
+@inproceedings{MA07,
+ author = {Mohammad Ashiqur Rahaman and Andreas Schaad},
+ title = {{SOAP}-based Secure Conversation and Collaboration},
+ booktitle = {ICWS 2007: Proceedings of the 2007 IEEE International Conference on Web Services},
+ year = {2007},
+ pages = {471--480},
+ location = {Salt Lake City, Utah, USA},
+ publisher = {{IEEE} Computer Society}
+ }
+
+@article{ SDFGPMCDAANMHCJCJ04,
+          key       =   {Siddharth Bajaj et al.},
+          author    =   {Siddharth Bajaj and Don Box and Dave Chappell and Francisco Curbera and Glen Daniels and Phillip Hallam-Baker and Maryann Hondo and Chris Kaler and Dave Langworthy and Ashok Malhotra and Anthony Nadalin and Nataraj Nagaratnam and Mark Nottingham and Hemma Prafullchandra and Claus von Riegen and Jeffrey Schlimmer and Chris Sharp and John Shewchuk},         
+          title     =   {Web Services Policy Framework (WS-Policy)},
+          year      =   {2004},
+          month     =   {September},
+          note      =   {{Available} at http://www.ibm.com/developerworks/library/specification/ws-polfram/}
+}
+
+
+
+
+@inproceedings{SLJ07,
+ author = {Sebastian Gajek and Lijun Liao and J\"{o}rg Schwenk},
+ title = {Breaking and fixing the inline approach},
+ booktitle = {SWS '07: Proceedings of the 2007 ACM workshop on Secure web services},
+ year = {2007},
+ isbn = {978-1-59593-892-3},
+ pages = {37--43},
+ location = {Fairfax, Virginia, USA},
+ doi = {http://doi.acm.org/10.1145/1314418.1314425},
+ publisher = {ACM},
+ address = {New York, NY, USA}
+ }
+
+@inproceedings{JAHI10,
+ author = {Juan A Botia and Antonio F Gomez-Skarmeta and Hoa Ha Doung and Isabelle Demeure},
+ title = {A Context-Sware Data Sharing Service over MANet to Enable Spontaneous Collaboration},
+ booktitle = {WETICE '08: Proceedings of the 2008 IEEE 17th Workshop on Enabling Technologies: Infrastructure for Collaborative Enterprises},
+ year = {2008},
+ isbn = {978-0-7695-3315-5},
+ pages = {159--164},
+ doi = {http://dx.doi.org/10.1109/WETICE.2008.13},
+ publisher = {{IEEE} Computer Society},
+ address = {Washington, DC, USA}
+}
+
+@article{DGS09,
+ author = {Domenico Rosaci and Giuseppe M. L. Sarn\'{e} and Salvatore Garruzzo},
+ title = {{MUADDIB: A distributed recommender system supporting device adaptivity}},
+ journal = {ACM Transactions on Information Systems ({TOIS})},
+ volume = {27},
+ number = {4},
+ year = {2009},
+ issn = {1046-8188},
+ pages = {1--41},
+ doi = {http://doi.acm.org/10.1145/1629096.1629102},
+ publisher = {ACM},
+ address = {New York, NY, USA}
+}
+
+@article{ BF10,
+	  author     =   {Byron Leite Dantas Bezerra and Francisco de Assis Tenorio de Carvalho},
+	  title      =   {Symbolic data analysis tools for recommendation systems},
+          journal    =   {Knowledge and Information Systems ({KAIS})},
+ 	  year       =   {2010},
+          month    = {February},
+          publisher =    {{Springer, London}}, 	
+          note  = {{DOI 10.1007/s10115-009-0282-3}} 
+}
+
+@article{DRXDJ08,
+ author = {David Mérida and Ramón Fabregat and Xavier Prat and David Huerva and Jeimy Velez},
+ title = {A Dynamic Content Generator for Adaptation in Hypermedia Systems},
+ journal = {Lecture Notes in Computer Science},
+ volume = {5149/2008},
+ number = {1},
+ month = {March},
+ year = {2008},
+ pages = {320--323},
+ publisher = {Springer},
+ address = {Berlin / Heidelberg}
+}
+
+@article{MS10,
+ author = {Murat G\"{o}ksedef and \c{S}ule G\"{u}nd\"{u}z-\"{O}\u{g}\"{u}d\"{u}c\"{u}},
+ title = {Combination of Web page recommender systems},
+ journal = {Expert Systems with Applications},
+ volume = {37},
+ number = {4},
+ year = {2010},
+ issn = {0957-4174},
+ pages = {2911--2922},
+ doi = {http://dx.doi.org/10.1016/j.eswa.2009.09.046},
+ publisher = {Pergamon Press, Inc.},
+ address = {Tarrytown, NY, USA}
+ }
+
+@article{DG06,
+ author = {Domenico Rosaci and Giuseppe M. L. Sarné},
+ title = {{MASHA}: A multi-agent system handling user and device adaptivity of Web sites},
+ journal = {User Modeling and User-Adapted Interaction},
+ volume = {16},
+ number = {5},
+ month = {December},
+ year = {2006},
+ issn = {0924-1868},
+ pages = {435--462},
+ doi = {10.1007/s11257-006-9015-4},
+ publisher = {Springer},
+ address = {Netherlands}
+ }
+
+@article{DFDCMV09,
+ author = {Delfina Malandrino and Francesca Mazzoni and Daniele Riboni and Claudio Bettini and Michele Colajanni and Vittorio Scarano},
+ title = {{MIMOSA}: context-aware adaptation for ubiquitous web access},
+ journal = {{Personal and Ubiquitous Computing (to appear)}},
+ month = {April},
+ year = {2009},
+ issn = {1617-4917 (Online)},
+ doi = {10.1007/s00779-009-0232-9},
+ publisher = {Springer},
+ address = {London}
+ }
+
+@inproceedings{AMXRQSK10,
+ author = {Aaron Beach and Mike Gartrell and Xinyu Xing and Richard Han  and Qin Lv and Shivakant Mishra  and Karim Seada},
+ title = {Fusing mobile, sensor, and social data to fully enable context-aware computing},
+ booktitle = {HotMobile '10: Proceedings of the Eleventh Workshop on Mobile Computing Systems \&\#38; Applications},
+ year = {2010},
+ isbn = {978-1-4503-0005-6},
+ pages = {60--65},
+ location = {Annapolis, Maryland},
+ doi = {http://doi.acm.org/10.1145/1734583.1734599},
+ publisher = {ACM},
+ address = {New York, NY, USA}
+ }
+
+@article{JIPPJEPF10,
+ author = {Juan A. Botía Blaya and Isabelle Demeure and Paolo Gianrossi and Pedro Garcia Lopez and Juan Antonio Martínez Navarro and Eike Michael Meyer and Patrizio Pelliccione and Frédérique Tastet-Cherel},
+ title = {{POPEYE}: providing collaborative services for ad hoc and spontaneous communities},
+ journal = {Service Oriented Computing and Applications},
+ volume = {3},
+ number = {1},
+ month = {March},
+ year = {2009},
+ pages = {15--45},
+ publisher = {Springer},
+ address = {London}
+}
+
+
+@inproceedings{PRRN06,
+ author = {Potlapally, Ravi, Raghunathan and Niraj},
+ title = {Heterogeneous Grid Computing for Energy Constrained Mobile Device},
+ booktitle = {{IEEE} Transactions on Mobile Computing},
+ volume = {5},
+ pages = {128 -- 143},
+ year = {2006},
+ publisher = {{IEEE}}
+}
+
+@article{ JS07,
+          author     =   {Douglas Crockford},
+          title      =   {The application/json Media Type for JavaScript Object Notation ({JSON})},
+          year       =   {2006},
+          month      =   {July},
+          note       =   {{Available} at http://tools.ietf.org/html/rfc4627}
+
+}
+
+@article{ OX05,
+          author     =  {Seairth Jacobs},
+          title      =   {Open Node Syntax Version 0.6.9},
+          year       =   {2005},
+          month      =   {June},
+          note       =   {{Available} at http://www.seairth.com/web/onx/onx.html}
+}
+
+@artcile{ LD01,
+    title = {Simple Outline XML: {SOX}},
+    year = {2002},
+    note = {{Available} at http://www.langdale.com.au/SOX/}
+}
+
+@article{ YM07,
+          title      =   {YAML},
+          year       =   {2007},
+          month      =   {November},
+          note       =   {{Available} at http://en.wikipedia.org/wiki/YAML}
+}
+
+@article{ KG02,
+          author     =   {Kendall Grant Clark},
+          title      =   {Look Ma, No Tags},
+          year       =   {2002},
+          month      =   {July},
+          note       =   {{Available} at http://www.xml.com/pub/a/2002/07/24/yaml.html}
+}
+
+@article{ AEEAHJJNS08,
+	  author     =   {Andrew Layman and Edward Jung and  Eve Maler and ArborText and Henry S Thompson and Jean Paoli and John Tigue  and Norbert H. Mikula and Steve De Rose},
+	  title      =   {{XML-Data}},
+          month = {January},
+ 	  year       =   {1998},
+          note       = {{W3C} Note, {Available} at  http://www.w3.org/TR/1998/NOTE-XML-data}
+}
+
+@article{OASIS10,
+	  author     =   {OASIS},
+	  title      =   {{RELAX NG} home page},
+ 	  year       =   {2010},
+          month = {June},
+          note       = {{Available} at http://relaxng.org/}
+}
+
+@article{ BHJE00,
+          author     =   {Brian LaMacchia and Hiroshi Maruyama and Jim Schaad and Ed Simon},
+          title      =   {{XML} Encryption Syntax and Processing},
+          year = {2000},
+          month = {December},
+          note    =   {{Review Draft, Available} at http://lists.w3.org/Archives/Public/xml-encryption/
+2000Dec/att-0024/01-XMLEncryption\_v01.html}
+}
+
+@article{ E07,
+          author        =   {Takeshi Imamura and Blair Dillaway and Ed Simon},
+          title      =   {{XML} Encryption Syntax and Processing },
+          year       =   {2002},
+          month      =   {December},
+          note       =   {{W3C} Recommendation, {Available} at http://www.w3.org/TR/xmlenc-core/}
+}
+
+@article{ N99,
+          author     =   {Norman Walsh},
+          title      =   {Understanding {XML} Schemas},
+          year       =   {1999},
+          month      =   {July},
+          note       =   {{Available} at http://www.xml.com/pub/a/1999/07/schemas/index.html?page=1}
+}
+
+@article{ ACPR04,
+          author     =   {Anthony Nadalin and Chris Kaler and Phillip Hallam-Baker and Ronald Monzillo},
+          title      =    {Web Services Security: {SOAP} Message Security 1.0 (WS-Security 2004)},
+          year       =   {2004},
+          month      =   {March},
+          note       =   {{Available} at http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0.pdf}
+}
+
+@article{ H00,
+	  author     =   {Haifei Li},
+	  title      =   {{XML} and Industrial Standards for Electronic Commerce},
+          journal    =   {Knowledge and Information Systems ({KAIS})},
+ 	  year       =   {2000},
+          pages      =   {487–-497},
+          volume     =   {2},
+          publisher =  {Springer-Verlag London Ltd} 	 
+}
+
+@article{ CS01,
+          author     =   {Chandramouli and Subbalakshmi}, 
+          title      =   {Wireless LAN: Issues and Challenges},
+          year       =   {2001},
+          note       =   {{Available} at http://www.ece.stevens-tech.edu/~mouli/WSTAarticle1.doc} 
+}
+
+@article{JTS08,
+	  author     =   {Jaakko Kangasharju and Tancred Lindholm and Sasu Tarkoma},
+	  title      =   {{XML} Security with Binary {XML} for Mobile Web Services},
+          journal    =   {International Journal of Web Services Research ({IJWSR})},
+ 	  year       =   {2008},
+          pages      =   {1–-19},
+          volume = {5},
+          number = {3},
+          publisher = {{IGI Global}} 	
+}
+
+@article{HW10,
+	  author     =   {Hyun-Ho Lee and Won-Suk Lee},
+	  title      =   {Consistent collective evaluation of multiple continuous queries for filtering heterogeneous data streams},
+          journal    =   {Knowledge and Information Systems({KAIS})},
+ 	  year       =   {2010},
+          month = {February},
+          pages      =   {185–-210},
+          volume = {22},
+          number = {2},
+          publisher = {Springer-Verlag London Ltd} 	
+}
+
+
+@article{KJTTS,
+ author = {Jaakko Kangasharju and Tancred Lindholm and Sasu Tarkoma},
+ title = {{XML} messaging for mobile devices: From requirements to implementation},
+ journal = {The International Journal of Computer and Telecommunications Networking},
+ year = {2007},
+ pages = {4634--4654},
+ volume = {51},
+ number = {16},
+ issn = {1389-1286},
+ publisher = {Elsevier North-Holland, Inc.},
+ address = {New York, NY, USA}
+ }
+
+
+
+@article{ WWPM06,
+	  author     =   {Wilfred Ng and Wai-Yeung Lam and Peter T Wood and Mark Levene},
+	  title      =   {{XCQ}: A queriable {XML} compression system},
+          journal    =   {Knowledge and Information Systems ({KAIS})},
+ 	  year       =   {2006},
+          pages      =   {421–-452},
+          volume     =   {4},
+          publisher =    {Springer-Verlag London Ltd}	 
+}
+
+@article{LMM10,
+ author = {Tamine-Lechani, Lynda and Boughanem, Mohand and Daoud, Mariam},
+ title = {Evaluation of contextual information retrieval effectiveness: overview of issues and research},
+ journal = {Knowl. Inf. Syst.},
+ volume = {24},
+ issue = {1},
+ month = {July},
+ year = {2010},
+ issn = {0219-1377},
+ pages = {1--34},
+ numpages = {34},
+ url = {http://dx.doi.org/10.1007/s10115-009-0231-1},
+ doi = {http://dx.doi.org/10.1007/s10115-009-0231-1},
+ acmid = {1832873},
+ publisher = {Springer-Verlag New York, Inc.},
+ address = {New York, NY, USA},
+ keywords = {Empirical evaluation, Profile, Relevance}
+} 
+
+@inproceedings{COF08,
+ author = {Cesare Pautasso and Olaf Zimmermann and Frank Leymann},
+ title = {{RESTful} Web Services vs. ``Big'' Web Services: Making the Right Architectural Decision},
+ booktitle = {WWW 2008: Proceedings of the International World Wide Web Conference, Beijing, China},
+ year = {2008},
+ month = {April},
+ pages = {805--814},
+ publisher = {ACM}
+ }
+
+@inproceedings{KCAG05,
+ author = {Karthikeyan Bhargavan and C\'{e}dric Fournet and Andrew D. Gordon and Greg O'Shea},
+ title = {An advisor for web services security policies},
+ booktitle = {SWS '05: Proceedings of the 2005 workshop on Secure web services},
+ year = {2005},
+ pages = {1--9},
+ location = {Fairfax, VA, USA},
+ publisher = {ACM},
+ address = {New York, NY, USA}
+ }
+
+@inproceedings{MNKD09,
+ author = {Martin Eggenberger and Nupur Prakash and Koji Matsumoto and Darrell Thurmond},
+ title = {Policy Based Messaging Framework},
+ booktitle = {Lecture Notes in Computer Science},
+ year = {2009},
+ volume = {4749},
+ isbn = {978-3-540-74973-8},
+ pages = {497-505},
+ publisher = {Springer Berlin / Heidelberg}
+ }
+
+@inproceedings{GD05,
+ author = {Gansen Zhao and David Chadwick},
+ title = {Trust Infrastructure for Policy based Messaging In Open Environments},
+ booktitle = {WETICE '05: Proceedings of the 14th IEEE International Workshops on Enabling Technologies: Infrastructure for Collaborative Enterprise},
+ year = {2005},
+ isbn = {0-7695-2362-5},
+ pages = {144--149},
+ doi = {http://dx.doi.org/10.1109/WETICE.2005.60},
+ publisher = {IEEE Computer Society},
+ address = {Washington, DC, USA}
+ }
+
+@article{ BHRM05,
+          author = {Bill Parducci and Hal Lockhart and Rich Levinson and Mary McRae},
+          title      =   {{OASIS} eXtensible Access Markup Language},
+          year       =   {2005},
+          note       =   {{Available} at http://www.oasis-open.org/committees/tc_home.php\?wg\_abbrev\=xacml},
+}
+
+@article{ SAML08,
+          key        =   {Saml}, 
+          title      =   {Security Assertion Markup Language ({SAML})},
+          year       =   {2008},
+          month      =   {December},
+          note       =   {{Available} at http://xml.coverpages.org/saml.html}
+}
+
+@inproceedings{AFJT08,
+ author = {Alex X. Liu and Fei Chen and JeeHyun Hwang and Tao Xie},
+ title = {Xengine: a fast and scalable {XACML} policy evaluation engine},
+ booktitle = {SIGMETRICS '08: Proceedings of the 2008 ACM SIGMETRICS international conference on Measurement and modeling of computer systems},
+ year = {2008},
+ pages = {265--276},
+ location = {Annapolis, MD, USA},
+ doi = {http://doi.acm.org/10.1145/1375457.1375488},
+ publisher = {ACM},
+ address = {New York, NY, USA}
+ }
+
+@inproceedings{BNKK08,
+ author = {Bo Lang and Nan Zhao and Kun Ge and Kai Chen},
+ title = {An {XACML} Policy Generating Method Based on Policy View},
+ booktitle = {ICPCA 2008: Proceedings of the 2008 Third International Conference on Pervasive Computing and Applications},
+ year = {2008},
+ month = {October},
+ pages = {295--301},
+ location = {Alexandria, Egypt},
+ doi = {10.1109/ICPCA.2008.4783596},
+ publisher = {IEEE}
+}
+
+@inproceedings{GFM03, 
+   author = {Gwendal Le Grand and Franck Springinsfeld and Michel Riguidel},
+   title = {Policy Based Management for Critical Infrastructure Protection},
+   booktitle = {INFORMATIK 2003: Proceedings of the First International Conference on Communities and Technologies},
+   journal = {Lecture Notes in Informatics},
+   pages = {67–-78},
+   year = {2003},
+   month = {September},
+   location = {Frankfurt, France},
+   publisher = {{GI, Gesellschaft fur Informatik, Bonn}},
+} 
+
+
+@article{ EPAL03,
+          key        =   {Epal}, 
+          title      =   {Enterprise Privacy Authorization Language ({EPAL} 1.2)},
+          year       =   {2003},
+          month      =   {November},
+          note       =   {{Available} at http://www.w3.org/Submission/2003/SUBM-EPAL-20031110/#Introduction}
+}
+
+
+@PhdThesis{RT00,
+          author = {Roy Thomas Fielding},
+           title = {Architectural Styles and the Design of Network-based Software Architectures},
+          school = {University of California, Irvine},
+          year = {2000}
+}
+
+@article{GS00,
+ author = {Marc Girardot and Neel Sundaresan},
+ title = {Millau: an encoding format for efficient representation and exchange of {XML} over the Web},
+ journal = {Computer Networks},
+ volume = {33},
+ issue = {1-6},
+ month = {June},
+ year = {2000},
+ issn = {1389-1286},
+ pages = {747--765},
+ numpages = {19},
+ url = {http://dx.doi.org/10.1016/S1389-1286(00)00051-7},
+ doi = {http://dx.doi.org/10.1016/S1389-1286(00)00051-7},
+ acmid = {346405},
+ publisher = {Elsevier North-Holland, Inc.},
+ address = {New York, NY, USA},
+ keywords = {RPC, binary XML, compression, proxy server, streaming, tokenization}
+} 
+
+
+@article{ACL10,
+          title      =   {{Agent Communications Language}},          
+          month = {August},
+          year       =   {2010},
+          note = {{Available} at http://en.wikipedia.org/wiki/Agent\_Communication\_Language}
+}
+
+@article{ WS10,
+          title      =   {Web service},
+          year       =   {2010},
+          month      =   {August},
+          note       =   {{Available} at http://en.wikipedia.org/wiki/Web\_service}
+}
+
+@article{ YYH08,
+	  author     =   {Yong-Xuan Lai and Yi-Long Chen and Hong Chen},
+	  title      =   {{PEJA}: Progressive energy-efficient join processing for sensor networks},
+          journal    =   {Journal of Computer Science and Technology {(JCST)}},
+ 	  year       =   {2008},
+          month = {November},
+          pages      =   {957–-972},
+          volume = {23},
+          number = {6},
+          publisher =  {Springer-Verlag}, 	
+}
+
+@article{ GJ08,
+	  author     =   {Guan Qun Gu and Jun-Zhou Lu},
+	  title      =   {Some Issues of Computer Networks: Architecture and Key Technologies},
+          journal    =   {Journal of Computer Science and Technology {(JCST)}},
+ 	  year       =   {2008},
+          pages      =   {708–-722},
+          volume = {21},
+          number = {5},
+          publisher =    {Springer-Verlag} 	
+}
+
+@article{HMH08,
+ author = {Hassan Artail and Manal Shihab and Haidar Safa},
+ title = {A distributed mobile database implementation on Pocket PC mobile devices communicating over Bluetooth},
+ journal = {Journal of Network and Computer Applications ({JNCA})},
+ volume = {32},
+ issue = {1},
+ month = {January},
+ year = {2009},
+ issn = {1084-8045},
+ pages = {96--115},
+ numpages = {20},
+ url = {http://portal.acm.org/citation.cfm?id=1460932.1461106},
+ doi = {10.1016/j.jnca.2008.04.003},
+ acmid = {1461106},
+ publisher = {Academic Press Ltd.},
+ address = {London, UK, UK},
+ keywords = {Bluetooth, Data availability, Distributed database, Mobile computing, Mobile databases}
+} 
+
+@article{ pas05,
+          author  =   {Paradiso and Starner},
+          title       =   {Energy scavenging for mobile and wireless electronics},
+          journal    =   {{IEEE} Pervasive Computing},
+          year       =   {2005},
+          volume = {4},
+          issue = {1},
+          pages = {18-27},
+          publisher =  {IEEE} 
+}
+
+@inproceedings{ PG07,
+          author     =   {Prashant Gokran},
+          title      =   {Making your Low-Cost Handsets plans succeed},
+          booktitle  =   {Telecom Era},
+          pages      =   {23--32},
+          year       =   {2007},
+          month      =   {November},  
+          publisher =  {Global Creations Group, India}        
+}
+
+@article{ CH01,
+	  author     =   {Charles Frankston and Henry S Thompson},
+	  title      =   {{XML-Data reduced, Version 0.21}},
+          month =  {June},
+ 	  year       =   {1998},
+          note       = {{Available} at  http://www.ltg.ed.ac.uk/~ht/XMLData-Reduced.htm}
+}
+
+@article{ TCA98,
+	  author     =   {Tim Bray and Charles Frankston and Ashok Malhotra},
+	  title      =   {Document Content Description for {XML}},
+ 	  year       =   {1998},
+          month = {July},
+          note       = {{W3C Note, Available} at  http://www.w3.org/TR/NOTE-dcd}
+}
+
+@article{ AMMMJCMK99,
+	  author     =   {Andrew Davidson and Matthew Fuchs  and Mette Hedin  and Mudita Jain  and Jari Koistinen  and Chris Lloyd  and Murray Maloney  and Kelly Schwarzhof},
+	  title      =   {Schema for Object-Oriented {XML} 2.0},
+ 	  year       =   {1999},
+          month = {July},
+          note       = {{W3C Note, Available} at  http://www.w3.org/TR/NOTE-SOX/}
+}
+
+@article{RBIS99,
+	  author     =   {Ronald Bourret and John Cowan and Ingo Macherius and Simon St. Laurent},
+	  title      =   {Document Definition Markup Language ({DDML}) Specification, Version 1.0},
+ 	  year       =   {1999},
+          month = {January},
+          note       = {{W3C Note, Available} at http://www.w3.org/TR/NOTE-ddml}
+}
+
+@article{WBF05,
+  author    = {Christian Werner and Carsten Buschmann and Stefan Fischer},
+  title     = {{WSDL}-Driven {SOAP} Compression},
+  journal   = {International Journal  of Web Service Research},
+  volume    = {2},
+  number    = {1},
+  year      = {2005},
+  pages     = {18-35},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@article{ R04,
+          author     =   {Ronald Schmelzer},
+          title      =   {Will binary {XML} solve {XML} performance woes?},
+          year       =   {2004},
+          month      =   {November},
+          note       =   {{Available} at http://searchwebservices.techtarget.com/tip/
+1,289483,sid,26\_gci1027726,00.html}
+}
+
+
+@inproceedings{BM06,
+ author = {Bertino and Martino},
+ title = {Security in {SOA} and web services},
+ booktitle = {{IEEE SCC '06: IEEE} International Conference on Services Computing},
+ year = {2006},
+ isbn = {0-7695-2670-5},
+ pages = {41--55},
+ location = {Chicago, IL, USA},
+ doi = {10.1109/SCC.2006.94},
+ publisher = {IEEE},
+ address = {New York, NY, USA}
+ }
+
+@inproceedings{CGGSS02,
+ author = {Cai and Ghandeharizadeh and Girardot and Schmidt and Song},
+ title = {A Comparison of Alternative Encoding Mechanisms for Web Services},
+ booktitle = {DEXA 2002: Proceedings of the 13th International Conference on Database and Expert Systems Applications},
+ year = {2002},
+ pages = {93--102},
+ location = {Aix en Provence, France},
+ publisher = {Springer-Verlag, LNCS 2453},
+ address = {Berlin Heidelberg}
+ }
+
+@inproceedings{MA05,
+ author = {Michael McIntosh and Paula Austel},
+ title = {{XML} Signature Element Wrapping Attacks and Countermeasures},
+ booktitle = {SWS '05: Proceedings of the 2005 workshop on Secure web services},
+ year = {2005},
+ isbn = {1-59593-234-8},
+ pages = {20--27},
+ location = {Fairfax, VA, USA},
+ publisher = {ACM},
+ address = {New York, NY, USA}
+ }
+
+@inproceedings{WK03,
+ author = {Wayne S Hanslo and Ken J MacGregor},
+ title = {Using {XML} Messaging for Wireless Middleware Communication},
+ booktitle = {SATNAC '03: Proceedings of the South African Telecommunication Network & Applications Conference, George, South Africa},
+ year = {2003},
+ month = {September},
+ location = {George, South Africa},
+ publisher = {North-Holland Publishing Co}
+ }
+
+
+@INPROCEEDINGS{TLC05,
+    author = {Jaakko Kangasharju and Tancred Lindholm and Sasu Tarkoma},
+    title = {Requirements and design for {XML} messaging in the mobile environment},
+    booktitle = {In Anerousis, N., Kormentzas, G., eds.: Second International Workshop on Next Generation Networking Middleware. (2005) 29–36},
+    year = {2005},
+    pages = {29--36},
+    publisher = {}
+}
+
+@inproceedings{MP05, 
+   author = {Martin Peter Michael},
+   title = {{Energy Awareness for Mobile Devices}},
+   booktitle = {Research Seminar on Energy Awareness, University of Helsinki},
+   year = {2005},
+} 
+
+
+@book{MDCDTJS02,
+ author = {Ron Schmelzer and Travis VanDersypen},
+ title = {{XML} and Web Services Unleashed},
+ year = {2002},
+ isbn = {0672323419},
+ publisher = {Sams},
+ address = {Indianapolis, IN, USA}
+} 
+
+@book{EH03,
+ author = {Harold Rusty Elliotte},
+ title = {XML Bible},
+ year = {2003},
+ isbn = {0764548190},
+ publisher = {John Wiley \& Sons, Inc.},
+ address = {New York, NY, USA}
+} 
+
+@inproceedings{DSRJD07,
+ author = {David Mérida and Silvia Baldiris and Ramón Fabregat and Jeimy Velez and David Huerva},
+ title = {A User Model that incorporates characteristics of Access Devices in {MAS-SHAAD}},
+ booktitle = {UM 2007: Proceedings of the TUMAS-A Workshop, 11th International Conference on User Modeling, Corfù, Greece},
+year = {2007},
+month = {June},
+ pages = {51--55}
+}
+
+

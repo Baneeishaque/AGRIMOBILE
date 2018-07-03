@@ -1,0 +1,278 @@
+\documentclass[twocolumn,10pt]{article}
+
+\title{An Alternative Approach for Optimized Mobile Messaging}
+
+\author{Abdul Haleem P P\\\\Guide : Dr M P Sebastian \thanks{Senior Lecturer, Computer Science Department, NITC}}
+\usepackage{graphics}
+\usepackage{epsfig}
+\begin{document}
+%\input{psfig}	
+\maketitle
+
+{\bf Keywords:}
+Wireless/Mobile Messaging, XML, Knowledge Representation.
+	
+\abstract{}
+{ \em Increasing popularity and wide usage of Mobile devices are really making wireless and mobile devices as quintessential entities of today's network. At the same time, the uncontrollable growth in usage of these devices poses several challenges for existing network protocols and applications. These challenges are due to the inherent deficiencies of mobile devices such as low processing power, battery requirements and poor quality of wireless networks, especially bandwidth and latency. Also, the issue of integrating the diverse range of mobile devices available, so that one end system can access the services from another one directly, is of paramount importance to the research fraternity. XML, a legacy technology, but still in use as a uniform solution to represent heterogeneous data formats, seems to be a suitable platform this purpose. But the storage requirements and processing workforce needed for XML, make it a nightmare for designers to opt XML for the purpose. This paper is about an alternative mechanism to achieve the goal of an acceptable messaging platform for heterogeneous devices, killing all the side effects of XML.}
+
+\section{\label{intro}Introduction}
+
+The power of availability being nomadic, just resulted in the amazing growth of wireless mobile devices all over the world.
+Being active members of every network, their presence causes several issues for existing network protocols and applications. This is due to the inherent deficiencies of mobile devices such as low processing power, battery requirements and poor quality of wireless networks, especially bandwidth and latency.
+
+The uncontrollable usage of heterogeneous mobile devices poses a potential challenge to the research community - integrating the diverse range of mobile devices, so that one end system can access the services from another one directly. A cross platform technology that can be used achieve seamless access to various range of devices and systems is the right candidate for such a scenario. XML, a legacy technology, but still in use a uniform solution to represent heterogeneous data formats, can be considered as a suitable platform this purpose. In SOAP (Simple Object Access Protocol), XML is already in use as a message syntax format.  
+
+But XML,in its present format, has got a lot of serious disadvantages, especially when used with wireless mobile devices. SOAP is also not suitable for wireless mobile devices, as HTTP, the most widely used protocol in SOAP is not suitable for wireless mobile devices.
+
+Hence there is an urgent need of for a novel messaging system, where all the inherent limitations of the wireless mobile environment is addressed. Our proposed work encompasses the following milestones:How a messaging protocol can be devised that having the strong points of XML, but free from its weak aspects. Thus our aim is to suggest a messaging format that has the following features:
+
+\begin{itemize}
+\item simple, ﬂexible, both for user and application programmer.
+\item human-legible, easily editable. 
+\item schema aware.
+\item consumes less bandwidth by reducing the verbosity of content.
+\item secure and fast.
+\end{itemize}
+
+This paper is organized as follows: In Section \ref{oview}, a brief introduction to the exisiting technologies is discussed. Section \ref{relwor} outlines the related work.Section \ref{pbr} is about the problem definition. In Section \ref{desig}, the details regarding technical realization is explained. Section \ref{res} contains conclusion and a breif discussion about the future work. 
+
+\section{\label{oview}Overview}
+
+\subsection{\label{ovmob}Mobile Messaging}
+
+
+
+Vast availablity and popularity of wirless mobile devices just revolutionized the way people communicate over eachother. 
+Presently, mobile devices are increasingly popular as active members of any network. The facilty of sending messages over mobile devices has been the the subject of a tremendous growth reaching billions of Short Message Service messages sent across the world. Despite its limitations, SMS is widely used today and accounts for a significant part of mobile operator revenues. 
+
+Apart from the normal use of communication, this facility can also be better utlilized to exchange information. For eg, Web services heavily make use of messages for exchanging data over different entities. Applying a userfreindly messaging protocol, that consume less bandwidth and that provides a fast and secure processing overhead is a major challenge to the research community. 
+
+
+eXtensible Markup Language (XML) \cite{BJ03} and the Simple Object Access Protocol (SOAP) \cite{SH03} are two important technologies worth mentioning in this regard. 
+
+XML lets everyone create their own tags-hidden labels that annotate Web pages or sections of text on a page. Scripts, or programs, can make use of these tags in sophisticated ways, but the script writer has to know what the page writer uses each tag for. In short, XML allows users to add arbitrary structure to their documents but says nothing about what the structures mean. Meaning is expressed by RDF, which encodes it in sets of triples, each triple being rather like the subject, verb and object of an elementary sentence.
+
+\subsection{\label{ovmobxml}eXtensible Markup Language (XML)}
+
+XML (eXtensible Markup Language) is a specification for computer-readable documents. Markup means that certain sequences of characters in the document contain information indicating the role of the document's content. The traditional use of XML was for the representation of data-oriented facts. Users are free to develop there own structures and create huge databases. Currently XML is widely perceived as a message syntax format – a significant usage that its innovators could not even think about! SOAP is a nice example where XML is actively present in its new incarnation - a message syntax format. 
+
+XML, a legacy technology, still widely in use, has a lot advantages. The most attracting feature of XML is that it can be used with latest Internet technology, in its present format. It has become the de facto standard to represent data over heterogeneous systems. Studies done on XML based packet routing and filtering revealed that it is viable and applicable. 
+
+At the same time, XML has got a lot of problems when used in mobile environments. These include\cite{} :
+
+\begin{itemize}
+\item It is highly textual, requires string parsing for further processing.
+\item It is strictly structured – this feature will be verified by parsers also. Hence XML parsing is a heavyweight activity.
+\item It is highly verbose in nature, when inputting and outputting, XML buffers need to be flushed more often, leading to lessened throughput. Also larger messages are more vulnerable to retransmissions, especially in wireless environments.
+\item It is widely in use, and hence become an easy target for hackers.
+\end{itemize}
+
+Evidently, these features are not viable for wireless mobile devices due their low processing power and less battery power. 
+
+\subsection{\label{ovmobsoap}Simple Object Access Protocol (SOAP)}
+
+Web services heavily make use of messages for exchanging data over different entities. SOAP is used as the protocol in web services, and XML is being used a message syntax format in SOAP.  Main underlying protocol in SOAP is HTTP. This is because of the following reasons:
+
+\begin{itemize}
+\item To support regular Web traffic, HTTP is allowed through firewalls. This firewall permissibility is hijacked by Web services also.
+\item SOAP used to be a protocol only for remote procedure calls (RPC). In this case HTTP’s request-response model fits into the application, making it a viable choice.
+\end{itemize}
+
+But HTTP is not suitable for wireless mobile environments due the following facts:
+
+\begin{itemize}
+\item Its verbosity as a protocol and ability to make use underlying protocols.
+\item The header size of HTTP can range to reach several kilobytes, and it may even kill the fruits of a generic compression.
+\end{itemize}
+
+\section{\label{relwor}Related Work}
+
+In subsections \ref{ovmobxml} and \ref{ovmobsoap} we briefly discussed the inherent deficiencies of XML and hence SOAP, pertaining to applying to the wireless mobile environment. Several solutions are proposed and devoloped to surmount these issues. They can be broadly classified into two categories:
+
+\begin{itemize} [Ref TDXML_Submission_final.pdf]
+\item Standard compression techniques.
+\item Alternate formats for XML.
+\item Caching.
+\item Binary Encoding.
+\end{itemize}
+
+A close watch on all of these methods reveal several shortcomings when applied to wireless mobile environments. For instance, standard compression techniques gives better performance with larger messages with with a high redundancy rate. With SOAP, this is a working solution, as HTTP supports generic compression tools. But it will not yield much results with large sets of short messages typical in mobile scenarios. Compression routines will have to employ different compression techniques on different parts of XML document - elements and attributes. This will clearly add woe to the injury, due to the long range of dependancies between elements and attributes. Also a compression/decompression layer will be an additional burden for the resource intensive mobile devices. 
+
+In order to acheive messaging format that demands less bandwidth requirements, several alternative serialisation formats were proposed. WAP Binary XML (WBXML),  also called Binary XML, is oldest known format in this direction. Since WBXML does not support the XML namespaces, it is considered as an obsolete service (Ref bxsa.pdf). The Xebu format builds up its tokenization during a stream of messages, instead of considering each XML document in isolation as most other formats. But this is acknowledged by the authors as preliminary(Ref bxsa.pdf).
+
+The major crux of these methods are an attempt to reduce the size of the message, by employing shorter tags.Readability and loss of description of XML were missing when these techniques are employed. Also there were concerns about the security aspects of XML Encryption, when encoding is applied.   Ofcourse certain remedies are proposed by Indiana Univesity [Ref TDXML_Submission_final.pdf - ng_oopsla04.pdf] and The Georgea Institute of Technology, but they are costly when implementation and evolution of applications are taken into consideration.
+
+Our work clearly deviates from these directions in the sense that it adhers to the legacy XML technology, by still retaining the fruits of XML - at the same time, its inherent deficiencies are carefully addressed.
+
+\section{\label{{pbr}An Optimized Approach to Mobile Messaging}
+
+The need to address the formulation of a messaging format for wireless mobile environments were mentioned in the previous sections. 
+
+Our humble attempt was to propse a messaging protocol that retains the features of XML - self descriptive nature, readability, ease of preparation, schema awareness and security - and at the same time kills all the inherent deficiencies of XML - mainly verbosity. Yaml - an international collaboration to make a data serialization language which is both human readable and computationally powerful were utlised to achieve this goal. 
+
+The task is visualised in three stages. In the first stage, the message was coded in Yaml format. Later this format was sliced furhter by employing a thinning alogorithm. In the second stage, a schema definition algorithm was employed to define a schema for the content of the message. In the third stage, the message was further thinned by making use of the schema defintion. Details of the algorithm are discussed in the next section.
+ 
+\section{\label{desig}Technical Realization}
+
+\subsection{\label{desigya}Why YAML?}
+
+For our work, we utlised YAML - an international collaboration to make a data serialization language which is both human readable and computationally powerful. The founding members of YAML are Brian Ingerson (author of the Perl module  Data::Denter),  Clark Evans, and Oren Ben-Kiki. 
+
+
+YAML is a human-readable data serialization format that takes concepts from languages such as XML, C, Python, Perl, as well as the format for electronic mail as specified by RFC 2822. Since XML (a true document markup language) is frequently used for data serialization, it is reasonable to consider YAML a lightweight markup language. YAML (rhymes with "camel") is a straightforward machine parsable data serialization format designed for human readability and interaction. YAML is optimized for data serialization, configuration settings, log files, Internet messaging and filtering. 
+
+Some of the peculiarities of YAML is listed below:
+
+\begin{itemize}
+\item very readable by humans.
+\item interacts well with scripting languages.
+\item uses host languages' native data structures.
+\item a consistent information model.
+\item enables stream-based processing.
+\item expressive and extensible.
+\item easy to implement.
+\end{itemize} 
+
+YAML's representation of native data is a rooted, connected, directed graph of tagged nodes. All the nodes must be reachable from the root node via such edges. Note that the YAML graph may include cycles, and a node may have more than one incoming edge.
+
+A quick comparison of XML and YAML is being shown in Table below.
+
+Our experiments reveal that YAML outperforms XML in all key aspects that we have taken into consideration.
+
+\subsection{\label{desigsy}System Design}
+
+The entire system is formulated in three stages.
+\begin{itemize}
+\item \emph{Stage I} Codification of test messages in YAML format.
+\item \emph{Stage II} Separation of data and content.
+\item \emph{Stage III} Substantiation and Confirmation.
+\item \emph{Stage III} Thinning - Phase I.
+\item \emph{Stage IV} Thinning - Phase II.
+\end{itemize}
+
+
+\subsubsection{\label{desigsy1}Stage I - Codification of test messages in YAML format}
+
+Messages were created as per YAML format. Document creation is extremly easy in YAML compared to XML. It can be created with the use of any simple text processor. The syntax is relatively straightforward and was designed with human readability in mind, but also to be easily mapped to data types common to most high-level languages.
+
+YAML streams are encoded using the set of printable Unicode characters, either in UTF-8 or UTF-16. Structure is denoted by whitespace indentation; tab characters are never allowed for this purpose. List members are denoted by a leading hyphen ( - ) with one member per line, or enclosed in square brackets ( [   ] ) and separated by comma space ( ,   ).
+Repeated nodes are initially denoted by an ampersand ( & ) and thereafter referenced with an asterisk ( * ). Comments are denoted by the number sign ( # ) and continue until the end of the line. A more detailed account of YAML specifications can be seen in {}.
+
+A simple message like "Please check this" from user A to User B can be codified in YAML as shown below. 
+
+%YAML 1.1
+---
+note:
+ - to      : A
+   from    : B
+   heading : Remainder
+   body    : Please check this and revert back.
+...
+
+The XML counter part of the above document is dispplayed below:
+
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<note>
+ <to>A</to>
+ <from>B</from>
+ <heading>Reminder</heading>
+ <body>Please check this and revert back.</body>
+</note> 
+
+There is an immediate gain of 41 bytes (125 bytes for YAML against 166 in XML)! This can be further improved by applying later stages in the design.
+
+\begin{table}[ht]
+\caption{Nonlinear Model Results}   % title of Table
+\centering                          % used for centering table
+\begin{tabular}{c c c c c}            % centered columns (4 columns)
+\hline\hline                        %inserts double horizontal lines
+File Type & YAML - Original & YAML Thinned I & YAML Thinned II & XML & SOAP\\ [0.5ex]   % inserts table
+%heading
+\hline                              % inserts single horizontal line
+1 & 50 & 837 & 970 \\               % inserting body of the table
+2 & 47 & 877 & 230 \\
+3 & 31 & 25 & 415 \\
+4 & 35 & 144 & 2356 \\
+5 & 45 & 300 & 556 \\ [1ex]         % [1ex] adds vertical space
+\hline                              %inserts single line
+\end{tabular}
+\label{table:nonlin}          % is used to refer this table in the text
+\end{table}
+
+
+
+\subsubsection{\label{desigsy2}Stage II - Seperation of data and content}
+Aim of this stage was to acheive saperation of structure and content. Undoubdtedly this will reduce the message size, particularly, when there are a set of message as per a common structure. If the message is accompanied with a schema, then only the process of defining IDs for each members of the nodes alone will be done.
+
+To acheive this task, the document is to be scanned one node at a time. There are three kinds of nodes in YAML - scalar, sequence, and mapping. Apart from this, there can be a mapping of sequence and sequence of mappings also. By sequence we mean an ordered series of entries, by mapping we mean an unordered association of unique keys to values, and by scalar we mean any datum with opaque structure presentable as a series of Unicode characters. Combined, these primitives generate directed graph structures. 
+
+Message structure will be evualuated to decide about the type of schema to be constructed. Type can of any of the three kinds just explained - scalar, sequence, mapping. Mapping of sequence and sequence of mappings was considered as sepecial cases. Primitive details like name of the "feild", its data type and a ID value are added to the schema for every member in a node. Further details were to be added in the validation and verification stage.
+
+Once this process is completed, we get a schema description of the message to be transferred.
+
+\begin{figure}
+\begin{center}
+\scalebox{0.80}
+{\includegraphics{design3a.png}}
+\caption{System Architecture - Stage I} \label{Fig:2}
+\end{center}
+\end{figure}
+
+\subsubsection{\label{desigsy3}Stage III - Substantiation and Confirmation}
+
+The definitions derived from the message regarding its structure could be verified further by the sender. This facility is provided to help the sender for correcting the schema definition, especially when there are a lot of segments of messages with the same structure is to be send. Apart from correction, more details like whether mandatory can also be added in this stage. 
+
+A schema defintion for a sample YAML file is shown below, for demonstration.
+
+
+
+\begin{figure}
+\begin{center}
+\scalebox{0.80}
+{\includegraphics{design4a.png}}
+\caption{System Architecture - Stage II \& III} \label{Fig:3}
+\end{center}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\scalebox{0.80}
+{\includegraphics{design5a.png}}
+\caption{System Architecture - Stage IV} \label{Fig:4}
+\end{center}
+\end{figure}
+
+\subsubsection{\label{desigsy4}Stage IV - Thinning}
+
+This stage has got 2 passes. In the first pass, thinning measures applied to reorganise the message in so called flow style format. Using this style of writing YAML message helps to trim the files sizes considerably. Rather than single datum, sequnces, mappings, sequences of mappings and mappings of sequences are selected for converting to this style. For eg, a complex message consisting of customer invoice having 20 product details can be subjected to this stage, for better conservation of message size. For short messages processing upto this stage is enough to produce comparatively good results.
+
+The sample file after pass 1 is shown below.
+
+In the second pass, ID codes specified for the fields are replaced for actual feild names. This is helpful in further thinning of the original message size. As these IDs are specified in the accompanying schmea, it can be very well decoded as and when needed.
+
+\section{\label{res}Results}
+
+For the ease of analysis, 
+\section{\label{res}Conclusion and Future Work}
+This paper described the standardization of unstructured text into Semantic Web Format, which is achieved in four stages.
+
+Considerable human hours are wasted in the repetitive task of interpretation and semantic annotation to reclaim the knowledge implicitly conveyed in the vast amount of ever growing available text content. This is due to the fact that the major part of the implicit semantic knowledge is not taken into account by state-of-the-art information access technologies like search engines, which restrict their indexing activities to superficial levels, mostly the keyword level. The work reported in this thesis becomes significant under these circumstances.  
+
+The process of unearthing information from text is extremely complex, considering the unpredictability of information packed in unstructured text. Hence a semi automatic method based on self learning mechanism is presented. 
+
+An important feature of such a system, is to have a facility that gives user the control over the process while automatically taking care of the extraction process based on the vocabulary base. This system is equipped with this feature in the sense that at the extraction
+phase it always performs the full extraction, based on the settings defined by the user. 
+
+Judging the correctness of the pre-selection recommended by the user, is a hard task in the process of semantic information extraction. To minimise the difficulty of this task, text highlighting of the annotated information was done in the original document. 
+
+To make things more deterministic for the user, for the next generation system, it is suggested to have a text highlighting of the extracted  information in the original document. The user could, by clicking on each of the suggestions, see the extracted highlighted entity within a context and more easily determine its correctness. Also, extraction techniques have to be more effective to minimise user intervention, thus effectively supplementing the system automation. 
+
+Although present work is just confined to the text, no one can ignore the luring and challenging task of effective acquisition, organization, processing, sharing, and use of the knowledge embedded in multimedia content as well as in information and knowledge based work processes. 
+
+\bibliographystyle{unsrt}	
+
+\nocite{*}		
+
+\bibliography{Project4}
+
+\end{document}

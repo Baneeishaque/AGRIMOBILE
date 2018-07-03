@@ -1,0 +1,59 @@
+\chapter{\label{impl}Implementation}
+
+\begin{figure}
+\begin{center}
+\includegraphics{design3a.png}
+\caption{System Architecture - Stage I} \label{Fig:2}
+\end{center}
+\end{figure}
+
+
+It is to be recalled that the core area envisaged in the Stage I of design is text data mining and semantic extraction of information from text - this itself is a stand-alone area of research, whose fruits are still in the evolving stage.  An open source tool designed by University of Sheffield, GATE (General Architecture for Text Engineering) is utilized in our work for information extraction.
+
+\section{\label{implphase1}Stage I }
+
+
+Powered with GATE, the steps included in implementation of Stage I can be summarised as follows:- 
+
+\begin{itemize}
+\item Preprocessing the Corpus - making the document ready for processing.
+\item Tuning the repositories of GATE such as gazetteers, framing pattern matching rules using JAPE, intialising and populating the annotation sets etc. 
+\item Defining the vocabulary needed for Corpus annotation and pattern matching.
+\item With the help of ANNIE, document will be mined as per the definitions defined in the repositories. OAJT (Ontology-Aware JAPE Transducer) will be utilised for ontology aware grammar transduction. This allows a JAPE transducer to match not only those features on the left hand side of a rule that match it exactly, but also to match any features that are subclasses of those specified in the JAPE rule. For example, if the vocabulary specifies that Sania is a Tennis Player, and that Tennis is a Sports item, then a rule that specifies Sports will match when it finds an instance of Sania or Tennis.
+OCAT (Ontology based Corpus Annotation Tool) is useful to refer one or more vocabularies in the process.
+\end{itemize}
+
+The correctness of the identified features in Stage I will be achieved in Stages II \& III.
+
+
+
+\subsection{\label{implmj}Major Issues Faced}
+
+\begin{itemize}
+
+\item Understanding the structure of GATE repositories and pattern matching rules to tune the system for the proposed work.
+\item Creation of vocabularies as per the standards set by IPTC for the proposed work.  
+
+\end{itemize}
+
+\section{\label{implphase2}Stage II \& III}
+
+\begin{figure}
+\begin{center}
+\includegraphics{design4a.png}
+\caption{System Architecture - Stage II \& III} \label{Fig:3}
+\end{center}
+\end{figure}
+
+The correctness of the structures mined in Stage I is achieved in these stages. Each structure identified so far can be reviewed, even by defining new annotations in the process. Definitions stored in the GATE repositories will also have to be updated to correct the extraction process. ANNIE will be run again over the document and the entire process will be repeated if needed. The vocabulary and annotation set needed for our work is evolved through these stages.
+
+\section{\label{implphase4}Stage IV}
+
+
+Next task is the formation of RDF statements for the extracted structures. Jena API, a comprehensive tool developed by HP Labs, were effectively used in this Stage to achieve the result. Repetitive runs done on the document, through stages II \& III yields a document structure annotated with semantic 
+structures unearthed so far. Document is then parsed and converted to a Document Object Model (DOM) tree. The DOM tree is later parsed and the statements were framed sticking to the IPTC specifications for SportsML and NewsML. For ease and simplicity SportsML specifications for Tennis were selected for trial. Extra efforts were done to make sure that the statements are as per the designed vocabulary. These statements were codified to RDF format, making sure the validity of RDF structure with the help of W3's online validator (Available at http://www.w3.org/RDF/Validator/). Online RDF editors were used to edit the RDF statements formed, hence assuring the correctness of the output.
+
+\begin{figure}
+\includegraphics{design5a.png}
+\caption{System Architecture - Stage IV} \label{Fig:4}
+\end{figure}

@@ -1,0 +1,14 @@
+\beamer@endinputifotherversion {3.36pt}
+\select@language {english}
+\beamer@subsectionintoc {0}{1}{INTRODUCTION}{2}{0}{0}
+\beamer@subsectionintoc {0}{2}{ABSTRACT}{5}{0}{0}
+\beamer@subsectionintoc {0}{3}{EXISTING SYSTEM}{7}{0}{0}
+\beamer@subsectionintoc {0}{4}{LITERATURE SURVEY}{9}{0}{0}
+\beamer@subsectionintoc {0}{5}{2015 IEEE Technological Innovation in ICT for Agriculture and Rural Development (TIAR)}{11}{0}{0}
+\beamer@subsectionintoc {0}{6}{Providing Smart Agricultural solutions to farmers for better yielding using IoT.}{13}{0}{0}
+\beamer@subsectionintoc {0}{7}{Mobile information system for small-scale rural farmers}{16}{0}{0}
+\beamer@subsectionintoc {0}{8}{MODULE DESCRIPTION}{18}{0}{0}
+\beamer@subsectionintoc {0}{9}{DATA FLOW DIAGRAM}{21}{0}{0}
+\beamer@subsectionintoc {0}{10}{DESIGN}{25}{0}{0}
+\beamer@subsectionintoc {0}{11}{CONCLUSION AND FUTURE WORK}{37}{0}{0}
+\beamer@subsectionintoc {0}{12}{REFERENCES}{39}{0}{0}

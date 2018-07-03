@@ -1,0 +1,70 @@
+\begin{thebibliography}{1}
+
+\bibitem{NRMF97}
+Anil~K. Jain.
+\newblock Data {C}lustering : 50 years beyond {K}-means.
+\newblock {\em Pattern Recognition Letters Elsevier}, 31(8):651--666, 2010.
+
+\bibitem{NRMF97}
+Fahim~A.M, Salem~A.M, Torkey~F.A and Ramadan~M.A.
+\newblock An efficient enhanced k-means clustering algorithm.
+\newblock {\em Journal of Zhejiang University SCIENCE A ISSN 1009-3095 (Print); 
+ISSN 1862-1775 (Online),www.springerlink.com}, 7(10), 2006.
+
+
+\bibitem{JHDP96}
+K.A.A. Nazeer and M.P. Sebastian.
+\newblock {\em Clustering Biological Data Using enhanced k-Means Algorithm}.
+\newblock Springer Netherlands, {F}irst edition, 2010.
+
+\bibitem{BCDK94}
+M.P.Sebastian and K.A. Abdul~Nazeer.
+\newblock Improving the accuracy and efficiency of the k-means clustering
+  algorithm.
+\newblock In {\em Proceedings of the World Congress on Engineering 2009 },
+  Vol I July 2009.
+
+\bibitem{BCDK94}
+M.P.Sebastian, K.A. Abdul~Nazeer and S.D.Madhu~Kumar.
+\newblock Enhancing the k-means clustering algorithm by using a O(n logn)
+heuristic method for finding better initial centroids 
+\newblock In {\em Second International Conference on Emerging Applications of 
+Information Technology IEEE },
+  Feb 2011 pp. 261 --264.
+
+\bibitem{NRMF97}
+M.P.Sebastian, K.A. Abdul~Nazeer and S.D.Madhu~Kumar.
+\newblock A Heuristic k-Means Algorithm with Better Accuracy and Efficiency
+ for Clustering Health Informatics Data 
+\newblock {\em American Scientific Publishers Journal of Medical Imaging and
+ Health Informatics }, 1:66--71, 2011.
+
+\bibitem{}
+R.Sumathi and E.Kirubakaran.
+\newblock Enhanced Weighted K-Means Clustering Based Risk Level 
+Prediction for Coronary Heart Disease
+\newblock {\em European Journal of Scientific Research },ISSN 1450-216X 71(4):490--500 2012 . 
+
+
+\bibitem{NRMF97}
+Murat~Erisoglu , Nazif~Calis and Sadullah~Sakalliogl.
+\newblock A new algorithm for initial cluster centers in k-means algorithm.
+\newblock {\em Pattern Recognition Letters Elsevier}, 32(14):1701--1705, October 2011.
+
+\bibitem{NRMF97}
+Damodar~Reddya and Prasanta~K. Janaa.
+\newblock Initialization for K-means clustering using Voronoi diagram.
+\newblock {\em Procedia Technology Elsevier}, 4:395--400, October 2012.
+
+\bibitem{NRMF97}
+T.H~Sarma , P.~Viswanath and B.~Reddy.
+\newblock A hybrid approach to speed-up the k-means clustering method.
+\newblock {\em nternational Journal of Machine Learning and Cybernetics Springer-Verlag},
+ pp.1--11, January 2012.
+
+
+
+
+
+\end{thebibliography}
+
