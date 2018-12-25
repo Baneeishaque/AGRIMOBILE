@@ -1,7 +1,0 @@
-\chapter{\label{rdf}Standardization of Unstructured Textual Data into Semantic Web Format}
-
-The need to address the unearthing of information from textual data banks and the evolution of Semantic Web are just mentioned in the previous chapters. A variety of research work are going on to  tap the potential of Semantic Web \-–- the extension of  conventional Web. 
-
-To effectively utilize the potential of Semantic Web, existing mountains of unstructured text data has to be converted to a format that can be understood by Semantic Web engines.  Hence the problem : extract information structures from the text, and then convert this semantic structure to RDF format, adhering to the standards set by IPTC.
-
-The text in the natural language will have to be scanned for the identification of facts and relations in text which includes distinguishing which noun phrase is a person, place, organization or other distinct object. This is a pure text data mining, to be achieved with the help of a predefined set of structures known as ``vocabularies''. The concepts gathered so far has to be verified and integrated. Lastly the conversion of the identified structure into RDF format has to be achieved, as per the specifications of IPTC. 
